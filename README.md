@@ -1,19 +1,13 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio
 
-# Project Name
-
-> Description the project.
+This project is created for learning that how to create Portfolio the toolbar (or header) and the headline section (right after the header):. 
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
@@ -22,35 +16,15 @@
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Author
 
-### Setup
+👤 **Author Samiullah**
 
-### Install
+- GitHub: [@githubhandle]([https://github.com/githubhandle](https://github.com/samiullah997))
+- Twitter: [@twitterhandle][(https://twitter.com/twitterhandle)](https://twitter.com/samiullahk997)
+- LinkedIn: [LinkedIn][(https://linkedin.com/in/linkedinhandle)](https://www.linkedin.com/in/samiullah-khan-2702b7171/)
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
