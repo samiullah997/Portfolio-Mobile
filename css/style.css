@@ -1,11 +1,23 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #3c3a39;
+  padding: 10px 12px;
+
 }
 
-.logo > a {
+.logo>a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,14 +42,10 @@ nav {
   align-items: flex-start;
   padding: 120px 24px;
   background-color: #1c1a19;
-}
-
-.bg-img {
-  position: absolute;
-  left: 59.37%;
-  right: -96.24%;
-  top: 65%;
-  bottom: 0.1%;
+  background-image: url("/images/Illustration.svg");
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 h1 {
@@ -46,7 +54,7 @@ h1 {
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  color: #a48168;
+  color: #FF6B00;
   letter-spacing: 0.37px;
 }
 
@@ -69,7 +77,9 @@ p {
 }
 
 .icons {
+  list-style: none;
   display: flex;
   gap: 5px;
-  margin-left: -55px;
+  padding-left: 0;
+  padding-bottom: 50px;
 }
