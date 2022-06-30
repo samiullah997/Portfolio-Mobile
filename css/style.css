@@ -14,10 +14,9 @@ header {
   justify-content: space-between;
   background: #3c3a39;
   padding: 10px 12px;
-
 }
 
-.logo>a {
+.logo > a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -54,7 +53,7 @@ h1 {
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  color: #FF6B00;
+  color: #ff6b00;
   letter-spacing: 0.37px;
 }
 
