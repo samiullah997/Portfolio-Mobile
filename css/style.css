@@ -377,6 +377,7 @@ hr {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: #fff;
   flex: none;
   order: 0;
@@ -640,6 +641,7 @@ hr {
   padding: 12px;
   gap: 10px;
   width: 161px;
+  text-decoration: none;
   height: 48px;
   background: #ff6b00;
   flex: none;
