@@ -16,7 +16,7 @@ header {
   padding: 10px 12px;
 }
 
-.logo>a {
+.logo > a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -83,27 +83,27 @@ p {
   padding-bottom: 50px;
 }
 
-/* Work Section Start*/
+/* Work Section Start  */
 
-/* Recent Work Section Start*/
+/* Recent Work Section Start */
 
 .recent-work {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0px;
+  padding: 120px 0;
   gap: 80px;
   position: absolute;
   width: 375px;
   height: 3455px;
-  left: 0px;
+  left: 0;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
   width: 327px;
   height: 107px;
@@ -116,7 +116,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
 
 .h-title {
@@ -137,7 +136,7 @@ p {
 
 hr {
   width: 100%;
-  height: 0px;
+  height: 0;
   border: 1px solid #212121;
   flex: none;
   order: 1;
@@ -148,7 +147,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 24px;
+  padding: 0 24px;
   gap: 24px;
   width: 375px;
   height: 568px;
@@ -170,7 +169,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 327px;
   height: 307px;
@@ -213,7 +212,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 297px;
   height: 40px;
@@ -388,7 +387,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 24px;
+  padding: 0 24px;
   gap: 24px;
   width: 375px;
   height: 2436px;
@@ -396,7 +395,6 @@ hr {
   order: 1;
   flex-grow: 0;
   margin-top: -128px;
-
 }
 
 .card-work {
@@ -416,7 +414,7 @@ hr {
   gap: 12px;
   width: 327px;
   height: 248px;
-  left: calc(50% - 327px/2);
+  left: calc(50% - 327px / 2);
   bottom: 62px;
 }
 
@@ -462,6 +460,7 @@ hr {
   flex-grow: 0;
   list-style: none;
 }
+
 .post-tags-2 > li {
   font-family: 'Inter';
   font-style: normal;
@@ -561,8 +560,8 @@ hr {
 .btn-action {
   width: 327px;
   height: 48px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   margin-top: 100px;
   background: #ff6b00;
 }
@@ -576,7 +575,7 @@ hr {
   position: absolute;
   width: 124px;
   height: 48px;
-  left: calc(50% - 124px/2);
+  left: calc(50% - 124px / 2);
   background: #ff6b00;
 }
 
@@ -584,7 +583,7 @@ hr {
   position: absolute;
   width: 375px;
   height: 1901px;
-  left: 0px;
+  left: 0;
   top: 3866px;
   background: #1c1a19;
 }
@@ -613,7 +612,7 @@ hr {
   position: absolute;
   width: 375px;
   height: 563px;
-  left: 0px;
+  left: 0;
   background-image: url(/images/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -671,15 +670,14 @@ hr {
   height: 17px;
   left: 24px;
   top: 4780px;
-  
 }
 
 .vector-1 {
   position: absolute;
-  height: 0px;
+  height: 0;
   left: 20px;
   right: 20px;
-  top: calc(30% - 0px/2 + 0.5px);
+  top: calc(30% - 0px / 2 + 0.5px);
   border: 1px solid #fff;
 }
 
@@ -695,7 +693,6 @@ hr {
   height: 1241.46px;
   left: calc(50% - 329px/2);
   top: 574px;
-
 }
 
 .right-skill {
@@ -706,18 +703,17 @@ hr {
   margin-right: 50px;
 }
 
-.skill>ul {
+.skill > ul {
   color: white;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
-
 }
 
-.skill>ul>li {
+.skill > ul > li {
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -762,7 +758,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 12px;
+  padding: 0 12px;
   gap: 8px;
   width: 186px;
   height: 216px;
@@ -775,7 +771,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 114px;
   height: 48px;
   flex: none;
