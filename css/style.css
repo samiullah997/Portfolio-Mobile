@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+
 }
 
 .h-title {
@@ -378,24 +378,28 @@ hr {
   align-items: center;
   padding: 0px;
   gap: 12px;
-  width: 236px;
+  width: 235px;
+  
   height: 40px;
   flex: none;
   order: 2;
   flex-grow: 0;
+  list-style: none;
 }
 
-.post-tag-2-1 {
-  display: flex;
-  flex-direction: row;
+.post-tags-2 > li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
   align-items: center;
-  padding: 10px 12px;
-  width: 56px;
-  height: 40px;
+  padding: 5px;
+  color: #fff;
   background: rgba(255, 255, 255, 0.24);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  width: 85px;
+  height: 32px;
+  text-align: center;
 }
 
 .post-tag-2-2 {
@@ -579,7 +583,7 @@ hr {
   height: 17px;
   left: 24px;
   top: 4780px;
-  
+
 }
 
 .vector-1 {
