@@ -8,6 +8,7 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* Recent Work Section Start*/
 
 .recent-work {
@@ -516,10 +517,41 @@ hr {
 }
 
 .about {
+=======
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #3c3a39;
+  padding: 10px 12px;
+}
+
+.logo > a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 2% 2%;
+}
+
+nav {
+  color: #fff;
+  margin: 2% 2%;
+}
+
+.content {
+>>>>>>> b48dc88335e1530bd95047aa7655f6761678eeda
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
+<<<<<<< HEAD
   gap: 24px;
   position: absolute;
   width: 375px;
@@ -535,10 +567,41 @@ hr {
   width: 327px;
   height: 148px;
   font-family: 'Inter';
+=======
+  background-color: #1c1a19;
+  background-image: url("/images/Illustration.svg");
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1 {
+  font-family: 'Crete-Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ff6b00;
+  letter-spacing: 0.37px;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+>>>>>>> b48dc88335e1530bd95047aa7655f6761678eeda
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+<<<<<<< HEAD
   color: #f4f5f7;
   flex: none;
   order: 1;
@@ -711,4 +774,15 @@ hr {
   flex: none;
   order: 3;
   flex-grow: 0;
+=======
+  color: #fff;
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding-left: 0;
+  padding-bottom: 50px;
+>>>>>>> b48dc88335e1530bd95047aa7655f6761678eeda
 }
