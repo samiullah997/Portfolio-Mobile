@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
+
 * {
   margin: 0;
   border: 0;
@@ -16,7 +18,7 @@ header {
   padding: 10px 12px;
 }
 
-.logo>a {
+.logo > a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -121,7 +123,7 @@ p {
 .h-title {
   width: 327px;
   height: 83px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -159,7 +161,7 @@ hr {
 .post-description {
   width: 327px;
   height: 147px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -185,7 +187,7 @@ hr {
 }
 
 .post-tags li {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -214,7 +216,7 @@ hr {
 .btn-text {
   width: 100px;
   height: 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -268,7 +270,7 @@ hr {
 .card-post-title {
   width: 295px;
   height: 81px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -283,7 +285,7 @@ hr {
 .supporting-text {
   width: 295px;
   height: 87px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -308,8 +310,8 @@ hr {
   list-style: none;
 }
 
-.post-tags-2>li {
-  font-family: 'Inter';
+.post-tags-2 > li {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -361,7 +363,7 @@ hr {
 .about-title {
   width: 327px;
   height: 79px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -392,7 +394,7 @@ hr {
 .about-description {
   width: 327px;
   height: 148px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -421,7 +423,7 @@ hr {
 .about-btn-title {
   width: 137px;
   height: 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -474,7 +476,7 @@ hr {
   margin-right: 50px;
 }
 
-.skill>ul {
+.skill > ul {
   color: white;
   list-style: none;
   display: flex;
@@ -484,11 +486,11 @@ hr {
   gap: 24px;
 }
 
-.skill>ul>li {
+.skill > ul > li {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -511,7 +513,7 @@ hr {
 .img-title {
   width: 164px;
   height: 24px;
-  font-family: 'InaiMathi';
+  font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -551,34 +553,10 @@ hr {
 
 /* Contact Form End */
 
-#maincontact {
-  position: absolute;
-  top: 5500px;
-  background-color: #fff;
-  display: grid;
-
-  /* padding: 24px 24px; */
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Inter', sans-serif;
-  text-align: center;
-  color: #172b4d;
-  height: 216px;
-  margin-left: 24px;
-  margin-right: 24px;
-  /* padding-top: 120px; */
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .form-contact {
   display: flex;
   flex-direction: column;
-   margin-left: 5px;
-  
+  margin-left: 5px;
   align-items: center;
   gap: 24px;
   width: 327px;
@@ -593,15 +571,6 @@ hr {
   /* padding-left: 10px; */
   gap: 10px;
   list-style: none;
-
-}
-
-.form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 500px;
-  padding-top: 24px;
 }
 
 .form > button {
@@ -691,6 +660,7 @@ hr {
   margin-top: 15px;
   margin-left: 120px;
 }
-.l-line{
+
+.l-line {
   margin-left: 35px;
 }
