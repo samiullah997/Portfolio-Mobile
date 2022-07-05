@@ -550,3 +550,21 @@ hr {
 }
 
 /* Contact Form End */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 58px;
+}
+
+#form-contact {
+  padding-left: 15px;
+  gap: 10px;
+}
