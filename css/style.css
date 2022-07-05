@@ -568,3 +568,26 @@ hr {
   padding-left: 15px;
   gap: 10px;
 }
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 130px;
+  padding-top: 24px;
+}
+
+.form > button {
+  background-color: #ff6b00;
+  align-items: center;
+  padding: 12px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+
+.form button:hover {
+  transition: 0.3s;
+}
