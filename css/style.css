@@ -532,7 +532,7 @@ hr {
 /* Contact Form Start */
 #maincontact {
   position: absolute;
-  top: 6500px;
+  top: 5768px;
   background-color: #fff;
   display: grid;
 }
@@ -568,14 +568,16 @@ hr {
 }
 
 #form-contact {
-  /* padding-left: 10px; */
+  padding-left: 24px;
   gap: 10px;
   list-style: none;
 }
 
-.form > button {
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-left: 36px;
   background-color: #ff6b00;
-  align-items: center;
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -584,7 +586,7 @@ hr {
   border: none;
 }
 
-.form button:hover {
+.form:hover {
   transition: 0.3s;
 }
 
@@ -637,14 +639,6 @@ hr {
 .txt-area::placeholder {
   color: #3c3a39;
   font-weight: 400;
-}
-
-.form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 130px;
-  padding-top: 24px;
 }
 
 #c-line {

@@ -227,43 +227,36 @@
     <!-- Contact Form Start -->
 
 
-    <section>
+    <footer>
 
         <div id="maincontact">
             <div class="contact">
                 <h2>I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in
                     touch.</h2>
             </div>
-            <div class="form-contact">
-                <form action="#">
-                    <ul id="form-contact">
-                        <li><input type="text" class="name" maxlength="30" required name="name" placeholder="Full name">
-                        </li>
-                        <li><input type="email" class="email" name="email" required placeholder="Email Address"></li>
-                        <li><textarea class="txt-area" maxlength="500" name="txt-area" required id="txt-area" cols="30"
-                                rows="5" placeholder="Enter text here"></textarea></li>
-                    </ul>
-                    <div class="form">
-                        <button type="submit"> Get in touch</button>
-                    </div>
-                </form>
-                <footer>
-                    <div>
-                        <div id="c-line">
-                            <div></div>
-                        </div>
-                        <div id="s-icons">
-                            <img src="/images/social-media-icon.png" alt="">
-                        </div>
-                        <div class="l-line">
-                            <img src="/images/light.png" alt="">
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
+            <form action="https://formspree.io/f/mrgjwpjk" method="post" class="form-contact">
+                <div id="form-contact">
+                    <input type="text" class="name" maxlength="30" required name="name" placeholder="Full name">
 
-    </section>
+                    <input type="email" class="email" name="email" required placeholder="Email Address">
+                    <textarea class="txt-area" maxlength="500" name="txt-area" required id="txt-area" cols="30" rows="5"
+                        placeholder="Enter text here"></textarea>
+                </div>
+                <button class="form" type="submit"> Get in touch</button>
+                <div>
+                    <div id="c-line">
+                        <div></div>
+                    </div>
+                    <div id="s-icons">
+                        <img src="/images/social-media-icon.png" alt="">
+                    </div>
+                    <div class="l-line">
+                        <img src="/images/light.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
 
 
     <!-- Contact Form End -->
