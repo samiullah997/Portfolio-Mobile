@@ -1037,6 +1037,13 @@ p {
     visibility: hidden;
   }
 
+  .post-tags li:hover{
+    background-color: #eb8c51;
+    transition-property: all;
+    transition: 1s;
+    cursor: pointer;
+  }
+
   .media-card-1 .btn-action {
     margin-top: 40px;
     visibility: visible;
