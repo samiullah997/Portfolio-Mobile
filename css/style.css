@@ -1122,6 +1122,12 @@ p {
     margin-left: 0;
   }
 
+  .skill-ul li:hover{
+    background-color: #eb8c51;
+    transition: 1s;
+    border-radius: 10rem;
+  }
+
   #footer {
     display: grid;
     width: 100%;
