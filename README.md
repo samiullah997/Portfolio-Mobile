@@ -1,6 +1,7 @@
-# Portfolio
+# Portfolio-project
 
-This project is created for learning that how to create Portfolio the toolbar (or header) and the headline section (right after the header):. 
+
+- A mobile portfolio page showcasing my projects and skills
 
 
 ## Built With
@@ -8,16 +9,16 @@ This project is created for learning that how to create Portfolio the toolbar (o
 - HTML
 - CSS
 
-
-
 ## Getting Started
+To get a local copy up and running follow these simple example steps:
+## prerequisites
+-must have git installed.
+## setup
+- git clone https://samiullah997.github.io/Portfolio-Mobile/
+- cd Portfolio-Mobile
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-
-
-## Author
+## Authors
 
 👤 **Author Samiullah**
 
@@ -26,9 +27,26 @@ This project is created for learning that how to create Portfolio the toolbar (o
 - LinkedIn: [LinkedIn][(https://linkedin.com/in/linkedinhandle)](https://www.linkedin.com/in/samiullah-khan-2702b7171/)
 
 
+## LIVE DEMO
+https://samiullah997.github.io/Portfolio-Mobile/
+
+## SCREENSHOTS
+
+![alt text](./images/screenshot-1.png)
+![alt text](./images/screenshot-2.png)
+![alt text](./images/screenshot-3.png)
+![alt text](./images/screenshot-4.png)
+![alt text](./images/screenshot-5.png)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b 'branchname`)
+3. Commit your Changes (`git commit -m 'Add some branchname'`)
+4. Push to the Branch (`git push origin branchname`)
+5. Open a Pull Request
 
 Feel free to check the [issues page](../../issues/).
 
@@ -36,11 +54,16 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
 
 ## 📝 License
 
