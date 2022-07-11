@@ -1037,10 +1037,10 @@ p {
     visibility: hidden;
   }
 
-  .post-tags li:hover{
+  .post-tags li:hover {
     background-color: #eb8c51;
-    transition-property: all;
     transition: 1s;
+    transition-property: all;
     cursor: pointer;
   }
 
@@ -1122,7 +1122,7 @@ p {
     margin-left: 0;
   }
 
-  .skill-ul li:hover{
+  .skill-ul li:hover {
     background-color: #eb8c51;
     transition: 1s;
     border-radius: 10rem;
