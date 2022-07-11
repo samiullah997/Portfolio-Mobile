@@ -48,7 +48,7 @@ nav {
   align-items: flex-start;
   padding: 120px 24px;
   background-color: #1c1a19;
-  background-image: url("/images/Illustration.svg");
+  background-image: url("../images/Illustration.svg");
   z-index: 1;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -261,7 +261,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-image: url(/images/img-placeholder-2.png);
+  background-image: url(../images/img-placeholder-2.png);
 }
 
 .post-right-block {
@@ -394,7 +394,7 @@ p {
   width: 375px;
   height: 563px;
   left: 0;
-  background-image: url(/images/illustration-about-me-mobile.png);
+  background-image: url(../images/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   z-index: 5;
@@ -737,7 +737,7 @@ p {
     display: grid;
     width: 100%;
     height: 870px;
-    background-image: url("/images/header-img-2.png");
+    background-image: url("../images/header-img-2.png");
     background-repeat: no-repeat;
     background-position: 100% 100%;
     z-index: 1;
@@ -873,7 +873,7 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/media-card-img-1.png);
+    background-image: url(../images/media-card-img-1.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -884,7 +884,7 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/media-card-img-2.png);
+    background-image: url(../images/media-card-img-2.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -895,7 +895,7 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/media-card-img-3.png);
+    background-image: url(../images/media-card-img-3.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -906,7 +906,7 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/img-placeholder-2.png);
+    background-image: url(../images/img-placeholder-2.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -917,7 +917,7 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/media-card-img-2.png);
+    background-image: url(../images/media-card-img-2.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -928,14 +928,14 @@ p {
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-image: url(/images/media-card-img-3.png);
+    background-image: url(../images/media-card-img-3.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .media-card-1:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-1.png);
+    background-image: url(../images/media-card-img-1.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -943,7 +943,7 @@ p {
 
   .media-card-2:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-2.png);
+    background-image: url(../images/media-card-img-2.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 5;
@@ -952,7 +952,7 @@ p {
 
   .media-card-3:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-3.png);
+    background-image: url(../images/media-card-img-3.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
@@ -961,7 +961,7 @@ p {
 
   .media-card-4:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-1.png);
+    background-image: url(../images/media-card-img-1.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
@@ -970,7 +970,7 @@ p {
 
   .media-card-5:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-2.png);
+    background-image: url(../images/media-card-img-2.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
@@ -979,7 +979,7 @@ p {
 
   .media-card-6:hover {
     transform: 0.3s;
-    background-image: url(/images/media-card-img-3.png);
+    background-image: url(../images/media-card-img-3.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
@@ -1069,7 +1069,7 @@ p {
     gap: 24px;
 
     /* left: 142px; */
-    background-image: url(/images/frame-2.png);
+    background-image: url(../images/frame-2.png);
     background-repeat: no-repeat;
     background-position: center right;
   }
