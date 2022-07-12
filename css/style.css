@@ -90,12 +90,6 @@ p {
   padding-bottom: 50px;
 }
 
-.icons > li:hover {
-  transition: .5s;
-  width: 50px;
-  height: 50px;
-}
-
 /* Work Section Start  */
 
 /* Recent Work Section Start */
@@ -215,6 +209,38 @@ p {
   width: 85px;
   height: 32px;
   text-align: center;
+}
+
+.post-tags-2 > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  width: 85px;
+  height: 32px;
+  text-align: center;
+}
+
+.skill-1 > ul > li {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.icons > li:hover {
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
 }
 
 .post-btn-enable {
@@ -340,21 +366,6 @@ p {
   list-style: none;
 }
 
-.post-tags-2 > li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  padding: 5px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
-  width: 85px;
-  height: 32px;
-  text-align: center;
-}
-
 .btn-action {
   width: 327px;
   height: 48px;
@@ -450,8 +461,8 @@ p {
   flex-grow: 0;
 }
 
-.about-btn:hover{
-  transition: .5s;
+.about-btn:hover {
+  transition: 0.5s;
   background-color: #fff;
   border: 0.1em solid #ff6b00;
   border-radius: 5px;
@@ -527,17 +538,6 @@ p {
   padding: 0;
   gap: 24px;
   margin-top: 28px;
-}
-
-.skill-1 > ul > li {
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
 }
 
 .skill-frame-1 {
@@ -634,7 +634,7 @@ p {
   transition: 0.3s;
   background-color: #fff;
   color: #ff6b00;
-  border: .1em solid #ff6b00;
+  border: 0.1em solid #ff6b00;
 }
 
 .name {
@@ -722,7 +722,7 @@ p {
 }
 
 #s-icons > ul > li:hover {
-  transition: .5s;
+  transition: 0.5s;
   width: 50px;
   height: 50px;
 }
