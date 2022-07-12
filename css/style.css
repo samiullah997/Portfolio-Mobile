@@ -90,6 +90,12 @@ p {
   padding-bottom: 50px;
 }
 
+.icons > li:hover {
+  transition: .5s;
+  width: 50px;
+  height: 50px;
+}
+
 /* Work Section Start  */
 
 /* Recent Work Section Start */
@@ -221,6 +227,21 @@ p {
   order: 3;
   flex-grow: 0;
   color: #fff;
+}
+
+.post-btn-enable:hover {
+  padding: 12px;
+  border: 0.1em solid #ff6b00;
+  border-radius: 5px;
+  transition: 0.5s;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #fcfcfc;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  color: #ff6b00;
 }
 
 .btn-text {
@@ -429,6 +450,14 @@ p {
   flex-grow: 0;
 }
 
+.about-btn:hover{
+  transition: .5s;
+  background-color: #fff;
+  border: 0.1em solid #ff6b00;
+  border-radius: 5px;
+  color: #ff6b00;
+}
+
 .about-btn-title {
   width: 137px;
   height: 24px;
@@ -445,6 +474,10 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.about-btn-title:hover {
+  color: #ff6b00;
 }
 
 .divider {
@@ -599,6 +632,9 @@ p {
 
 .form:hover {
   transition: 0.3s;
+  background-color: #fff;
+  color: #ff6b00;
+  border: .1em solid #ff6b00;
 }
 
 .name {
@@ -683,6 +719,12 @@ p {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+#s-icons > ul > li:hover {
+  transition: .5s;
+  width: 50px;
+  height: 50px;
 }
 
 .l-line {
@@ -1038,8 +1080,10 @@ p {
   }
 
   .post-tags li:hover {
-    background-color: #eb8c51;
-    transition: 1s;
+    background-color: #ff6b00;
+    border: 0.1em solid #fff;
+    color: #fff;
+    transition: 0.5s;
     transition-property: all;
     cursor: pointer;
   }
@@ -1123,6 +1167,7 @@ p {
   }
 
   .skill-ul li:hover {
+    padding: 10px;
     background-color: #eb8c51;
     transition: 1s;
     border-radius: 10rem;
