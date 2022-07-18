@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Hi, welcome to My Personal Portfolio. This is where I keep all of my work.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
@@ -18,22 +19,23 @@
 <body>
     <!--Nav menu and the logo-->
 
-    <header>
+    <header id="header">
         <div class="logo">
             <a href="#">Sami</a>
         </div>
         <nav>
-            <i class="fa fa-bars"></i>
-            <div class="hidden">
-                <div class="ab"><a href="#">Portfolio</a></div>
-                <div class="cb"><a href="#">About</a></div>
-                <div class="db"><a href="#">Contact</a></div>
-                <div><a href="#"><img src="./images/message-icon.png" alt=""></a></div>
-            </div>
+            <i class="fa fa-bars menu-icon" id="menu-icon"></i>
+            <i class="fa fa-xmark menu-icon" id="x-icon"></i>
+            <ul class="hidden" id="hidden">
+                <li class="ab" id="item-list-1"><a href="#porfolio">Portfolio</a></li>
+                <li class="cb" id="item-list-2"><a href="#about">About</a></li>
+                <li class="db" id="item-list-3"><a href="#maincontact">Contact</a></li>
+                <li class="email-icon"><a href="#"><img src="./images/message-icon.png" alt=""></a></li>
+            </ul>
         </nav>
     </header>
     <!--Home section-->
-    <section class="content">
+    <section class="content" id="porfolio">
         <div class="wrapper">
             <h1>Hey There.
                 I’m Sami</h1>
@@ -56,7 +58,7 @@
 
     </section>
     <!-- Recent Work Start -->
-    <section class="recent-work">
+    <section class="recent-work" id="work">
         <div class="title">
             <h1 class="h-title">My Recent Works</h1>
             <div id="h-line">
@@ -195,8 +197,8 @@
     <!-- Recent Work End -->
 
     <!-- About Section Start -->
-    <section class="rectangle">
-        <div class="about">
+    <section class="rectangle" id="about">
+        <div class="about" id="sub-about">
             <h1 class="about-title">About me</h1>
             <p class="about-description">Hello I’m a software developer! I can help you build a product , feature or
                 website Look through some of my work and experience! If you like what you see and have a project you
@@ -254,7 +256,7 @@
     <!-- Contact Form Start -->
 
 
-    <footer id="footer">
+    <footer id="footer" >
 
         <div id="maincontact">
             <div class="contact">
@@ -271,8 +273,8 @@
                 </div>
             </form>
         </div>
-        <div class="footer">
-            <hr id="c-line">
+        <div class="footer" id="icons">
+            <hr id="c-line" >
             <div id="s-icons">
                 <ul class="icon-style">
                     <li><a href="#"><img src="./images/1.png" alt=""></a></li>
@@ -291,6 +293,8 @@
 
 
     <!-- Contact Form End -->
+
+    <script src="script.js"></script>
 
 </body>
 

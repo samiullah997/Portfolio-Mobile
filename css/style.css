@@ -12,11 +12,33 @@ body {
 }
 
 header {
+  /* height: 755px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #3c3a39;
   padding: 10px 12px;
+}
+
+.logo {
+  height: 30px;
+  margin: 2% 2%;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo > a {
@@ -29,17 +51,39 @@ header {
   text-decoration: none;
 }
 
-.logo {
-  margin: 2% 2%;
-}
-
-nav {
-  color: #fff;
-  margin: 2% 2%;
-}
-
 .hidden {
   display: none;
+  margin-top: 30px;
+  width: 100%;
+  flex-direction: column;
+}
+
+nav i {
+  margin-top: 10px;
+  text-align: end;
+}
+
+nav #x-icon {
+  display: none;
+}
+
+.hidden .email-icon {
+  display: none;
+}
+
+.hidden li {
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.hidden li > a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
 }
 
 .content {
@@ -740,39 +784,57 @@ p {
 
   nav {
     color: #fff;
-    margin: 2% 2%;
+    display: flex;
+    flex-direction: row;
   }
 
-  /* .header {
+  .header {
     width: 1440px;
     height: 72px;
-  } */
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .hidden .email-icon {
+    display: block;
+  }
 
   .fa {
     display: none;
   }
 
+  .about > a {
+    margin-left: 30px;
+  }
+
   .hidden {
-    position: absolute;
+    width: 300px;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0;
+    position: absolute;
+    flex-direction: row;
     gap: 50px;
     right: 100px;
     top: calc(6% - 40px / 2);
   }
 
-  .hidden div {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
+  .hidden li {
+    border: none;
   }
 
-  .hidden a {
+  .hidden li a {
+    width: 63px;
+    height: 20px;
     font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .content {
@@ -1123,10 +1185,6 @@ p {
   }
 
   .about > p {
-    margin-left: 30px;
-  }
-
-  .about > a {
     margin-left: 30px;
   }
 
