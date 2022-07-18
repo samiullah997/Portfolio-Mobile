@@ -1,0 +1,10 @@
+let menuIcon=document.getElementById('menu-icon');
+let xIcon=document.getElementById('x-icon');
+let menuList=document.getElementById('hidden');
+let header=document.getElementById('header');
+let about= document.getElementById('about');
+let maincontact=document.getElementById('maincontact');
+let footer=document.getElementById('icons');
+let listItems1=document.getElementById('item-list-1');
+let listItems2=document.getElementById('item-list-2');
+let listItems3=document.getElementById('item-list-3');
