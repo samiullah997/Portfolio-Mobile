@@ -58,6 +58,38 @@
 
     </section>
     <!-- Recent Work Start -->
+
+    <!-- Modal Start -->
+    <div class="modal" id="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Multi Post Stories</h2>
+                <span id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Html</li>
+                    <li>Bootstrap</li>
+                    <li>Ruby on rails</li>
+                </ul>
+                <div class="modal-img"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    the
+                    leap into electronic typesetting, remaining essent</p>
+                <div class="modal-buttons">
+                    <button class="btn-live">See Live <span class="live-icon"><img src="/images/btn-live-icon.png" alt="live icon"></span></button>
+                    <button class="btn-source">See Source<span class="live-icon"><img src="/images/git-white-icon.png" alt="Github icon"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- modal end -->
+
     <section class="recent-work" id="work">
         <div class="title">
             <h1 class="h-title">My Recent Works</h1>
@@ -78,7 +110,7 @@
                     <li>bootstrap</li>
                     <li>Ruby</li>
                 </ul>
-                <button class="post-btn-enable" type="button">See Project</button>
+                <button data-modal-target="#modal" id="show-modal"  class="post-btn-enable" type="button">See Project</button>
             </div>
         </div>
         <div class="recent-frame-2">
@@ -256,7 +288,7 @@
     <!-- Contact Form Start -->
 
 
-    <footer id="footer" >
+    <footer id="footer">
 
         <div id="maincontact">
             <div class="contact">
@@ -274,7 +306,7 @@
             </form>
         </div>
         <div class="footer" id="icons">
-            <hr id="c-line" >
+            <hr id="c-line">
             <div id="s-icons">
                 <ul class="icon-style">
                     <li><a href="#"><img src="./images/1.png" alt=""></a></li>
