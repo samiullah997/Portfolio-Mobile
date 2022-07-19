@@ -78,15 +78,14 @@ function myFunction(x) {
 const x = window.matchMedia('(max-width: 768px)');
 myFunction(x); // Call listener function at run time
 
-
 // modal work start
 
-  let showModal = document.getElementById('show-modal');
-  let closeModal = document.getElementById('close-modal');
-  showModal.addEventListener('click',()=>{
-    document.getElementById('modal').classList.add('active');
-  });
-  closeModal.addEventListener('click',()=>{
-    document.getElementById('modal').classList.remove('active');
-  });
+let showModal = document.getElementById('show-modal');
+let closeModal = document.getElementById('close-modal');
+showModal.addEventListener('click',()=>{
+  document.getElementById('modal').classList.add('active');
+});
+closeModal.addEventListener('click',()=>{
+  document.getElementById('modal').classList.remove('active');
+});
 // modal work End
