@@ -1439,4 +1439,31 @@ p {
   .l-line {
     visibility: hidden;
   }
+  .modal{
+    display: block;
+    width: 100%;
+  }
+  .modal-container{
+    height: 631px;
+    width: 1156px;
+  }
+  .modal-header{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .modal-body{
+    display: flex;
+    flex-direction: row;
+  }
+  .modal-body 
+
+  .modal-img{
+    height: 659px;
+    width: 448px;
+  }
+  .modal-body
+  #description{
+    height : 424px;
+    width: 336px;
+  }
 }
