@@ -41,7 +41,7 @@ a {
   text-decoration: none;
 }
 
-.logo > a {
+.logo>a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -77,7 +77,7 @@ nav #x-icon {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.hidden li > a {
+.hidden li>a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -151,7 +151,7 @@ p {
   text-align: center;
 }
 
-.post-tags-2 > li {
+.post-tags-2>li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -232,13 +232,13 @@ p {
   width: 100%;
 }
 
-.modal-body ul {
+.modal-container ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.modal-body ul li {
+.modal-container ul li {
   border: 1px solid #3c3a39;
   padding: 5px;
 }
@@ -333,7 +333,7 @@ p {
   gap: 10px;
 }
 
-.recent-frame-1 > img {
+.recent-frame-1>img {
   width: 327px;
   height: 237px;
 }
@@ -404,7 +404,7 @@ p {
   list-style: none;
 }
 
-.skill-1 > ul > li {
+.skill-1>ul>li {
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -415,7 +415,7 @@ p {
   line-height: 43px;
 }
 
-.icons > li:hover {
+.icons>li:hover {
   transition: 0.5s;
   width: 50px;
   height: 50px;
@@ -707,7 +707,7 @@ p {
   margin-right: 50px;
 }
 
-.skill-1 > ul {
+.skill-1>ul {
   color: white;
   list-style: none;
   display: flex;
@@ -893,13 +893,13 @@ p {
   justify-content: center;
 }
 
-#s-icons > ul {
+#s-icons>ul {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-#s-icons > ul > li:hover {
+#s-icons>ul>li:hover {
   transition: 0.5s;
   width: 50px;
   height: 50px;
@@ -939,7 +939,7 @@ p {
     display: none;
   }
 
-  .about > a {
+  .about>a {
     margin-left: 30px;
   }
 
@@ -981,7 +981,7 @@ p {
     z-index: 1;
   }
 
-  .wrapper > h1 {
+  .wrapper>h1 {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     width: 566px;
@@ -991,7 +991,7 @@ p {
     line-height: 82px;
   }
 
-  .wrapper > h4 {
+  .wrapper>h4 {
     display: flex;
     width: 566px;
     height: 24px;
@@ -1001,7 +1001,7 @@ p {
     align-items: center;
   }
 
-  .wrapper > p {
+  .wrapper>p {
     display: flex;
     width: 566px;
     height: 123px;
@@ -1314,11 +1314,11 @@ p {
     background-position: center right;
   }
 
-  .about > h1 {
+  .about>h1 {
     margin-left: 30px;
   }
 
-  .about > p {
+  .about>p {
     margin-left: 30px;
   }
 
@@ -1341,7 +1341,7 @@ p {
     align-items: unset;
   }
 
-  .skill-1 > ul {
+  .skill-1>ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1430,7 +1430,7 @@ p {
     margin-top: 0;
   }
 
-  #s-icons > ul {
+  #s-icons>ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -1439,31 +1439,69 @@ p {
   .l-line {
     visibility: hidden;
   }
-  .modal{
+
+  .modal {
     display: block;
     width: 100%;
+    top: 45%;
+    left: 50%;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+
   }
-  .modal-container{
-    height: 631px;
+
+  .modal-container {
+    margin-left: 30px;
+    height: auto;
     width: 1156px;
+    margin: 43px;
+    height: 78%;
+
   }
-  .modal-header{
-    justify-content: space-between;
-    width: 100%;
-  }
-  .modal-body{
+
+  .modal-container ul {
     display: flex;
     flex-direction: row;
   }
-  .modal-body 
 
-  .modal-img{
-    height: 659px;
-    width: 448px;
+  .modal-header {
+    justify-content: space-between;
+    width: 100%;
   }
-  .modal-body
-  #description{
-    height : 424px;
-    width: 336px;
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
   }
+
+  .modal-body .modal-img {
+    width: 659px;
+    height: 398px;
+  }
+
+  .modal-body .p-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 424px;
+    height: 416px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px;
+    justify-content: space-between;
+  }
+
+  .p-content .modal-buttons {
+    margin-bottom: 0;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: start;
+    }
+
 }
