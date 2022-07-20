@@ -82,7 +82,7 @@ myFunction(x); // Call listener function at run time
 const showItemInfo = {
   title: document.getElementById('h-title').innerText,
   image: document.getElementById('post-img').getAttribute('src'),
-  description:document.getElementById('description').innerText,
+  description: document.getElementById('desc').innerText,
   technologies: {
     tech1: document.getElementById('post-tech1').innerText,
     tech2: document.getElementById('post-tech2').innerText,
@@ -103,79 +103,79 @@ const closeModal = document.getElementById('close-modal');
 showModal.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal1.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal2.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal3.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal4.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal5.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 showModal6.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
-  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
+  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
 });
 closeModal.addEventListener('click', () => {
   document.getElementById('modal').classList.remove('active');
