@@ -79,13 +79,31 @@ const x = window.matchMedia('(max-width: 768px)');
 myFunction(x); // Call listener function at run time
 
 // modal work start
-
-let showModal = document.getElementById('show-modal');
-let closeModal = document.getElementById('close-modal');
-showModal.addEventListener('click',()=>{
+const showItemInfo = {
+  title: 'Multi-Post Stories',
+  image: '1.png',
+  description:
+    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  technologies: {
+    tech1: 'css',
+    tech2: 'html',
+    tech3: 'bootstrap',
+    tech4: 'ruby',
+  },
+  liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+  liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+};
+const showModal = document.getElementById('show-modal');
+const closeModal = document.getElementById('close-modal');
+showModal.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('image').backgroundImage = URL(document.getElementById('post-img').getAttribute.URL);
+  document.getElementById('description').innerText = showItemInfo.description;
+
+
 });
-closeModal.addEventListener('click',()=>{
-  document.getElementById('modal').classList.remove('active');
+closeModal.addEventListener('click', () => {
+  document.getElementById('moda').classList.remove('active');
 });
 // modal work End
