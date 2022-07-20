@@ -100,8 +100,6 @@ showModal.addEventListener('click', () => {
   document.getElementById('postTitle').innerText = showItemInfo.title;
   document.getElementById('image').backgroundImage = URL(document.getElementById('post-img').getAttribute.URL);
   document.getElementById('description').innerText = showItemInfo.description;
-
-
 });
 closeModal.addEventListener('click', () => {
   document.getElementById('moda').classList.remove('active');
