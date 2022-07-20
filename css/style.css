@@ -222,7 +222,6 @@ p {
 .modal-header span {
   font-size: 30px;
   cursor: pointer;
-  
 }
 
 .modal-body {
@@ -1292,8 +1291,6 @@ p {
     transition-property: all;
     cursor: pointer;
   }
-
-
 
   .rectangle {
     position: absolute;
