@@ -176,12 +176,11 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 111vh;
+  height: 100vh;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: nones;
   align-items: center;
-  padding-top: 130px;
 }
 
 .modal.active {
@@ -222,6 +221,8 @@ p {
 
 .modal-header span {
   font-size: 30px;
+  cursor: pointer;
+  
 }
 
 .modal-body {
@@ -289,8 +290,24 @@ p {
   margin: 10px;
 }
 
+.btn-live:hover {
+  background-color: #dfe1e6;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
 .btn-source span {
   margin: 10px;
+}
+
+.btn-source:hover {
+  background-color: #dfe1e6;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
+  border-radius: 5px;
 }
 
 .live-icon img {
@@ -1179,6 +1196,18 @@ p {
     cursor: pointer;
   }
 
+  .card-work .btn-action {
+    visibility: hidden;
+  }
+
+  .card-work:hover .btn-action {
+    visibility: visible;
+  }
+
+  .card-work:hover .post-right-block {
+    visibility: hidden;
+  }
+
   .media-card-2:hover {
     transform: 0.3s;
     background-image: url(../images/media-card-img-2.png);
@@ -1255,26 +1284,6 @@ p {
     flex-grow: 0;
   }
 
-  .card-work .btn-action {
-    visibility: hidden;
-  }
-
-  .post-right-block {
-    margin-top: 50px;
-  }
-
-  .media-card-1 .card-post-title {
-    visibility: hidden;
-  }
-
-  .media-card-1 .supporting-text {
-    visibility: hidden;
-  }
-
-  .media-card-1 .post-tags-2 {
-    visibility: hidden;
-  }
-
   .post-tags li:hover {
     background-color: #ff6b00;
     border: 0.1em solid #fff;
@@ -1284,10 +1293,7 @@ p {
     cursor: pointer;
   }
 
-  .media-card-1 .btn-action {
-    margin-top: 40px;
-    visibility: visible;
-  }
+
 
   .rectangle {
     position: absolute;
@@ -1304,11 +1310,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    /* padding: 130px 0px; */
     gap: 24px;
-
-    /* left: 142px; */
     background-image: url(../images/frame-2.png);
     background-repeat: no-repeat;
     background-position: center right;
@@ -1433,17 +1435,17 @@ p {
   .modal {
     display: block;
     width: 100%;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    height: 140vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
   }
 
   .modal-container {
-    width: 1156px;
-    margin: 43px;
-    height: 78%;
+    width: 92%;
+    height: 92%;
+    margin-left: 50px;
   }
 
   .modal-container ul {

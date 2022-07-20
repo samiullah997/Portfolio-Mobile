@@ -8,6 +8,7 @@ const footer = document.getElementById('icons');
 const listItems1 = document.getElementById('item-list-1');
 const listItems2 = document.getElementById('item-list-2');
 const listItems3 = document.getElementById('item-list-3');
+
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
@@ -78,106 +79,101 @@ function myFunction(x) {
 const x = window.matchMedia('(max-width: 768px)');
 myFunction(x); // Call listener function at run time
 
-// modal work start
-const showItemInfo = {
-  title: document.getElementById('h-title').innerText,
-  image: document.getElementById('post-img').getAttribute('src'),
-  description: document.getElementById('desc').innerText,
-  technologies: {
-    tech1: document.getElementById('post-tech1').innerText,
-    tech2: document.getElementById('post-tech2').innerText,
-    tech3: document.getElementById('post-tech3').innerText,
-    tech4: document.getElementById('post-tech4').innerText,
+const showItemInfo = [
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
   },
-  liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
-  liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
-};
-const showModal = document.getElementById('show-modal');
-const showModal1 = document.getElementById('show-modal-1');
-const showModal2 = document.getElementById('show-modal-2');
-const showModal3 = document.getElementById('show-modal-3');
-const showModal4 = document.getElementById('show-modal-4');
-const showModal5 = document.getElementById('show-modal-5');
-const showModal6 = document.getElementById('show-modal-6');
-const closeModal = document.getElementById('close-modal');
-showModal.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+  },
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+  },
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+  },
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+  },
+  {
+    title: 'Multi-Post Stories',
+    image: './images/img-placeholder-1.png',
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
+    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+  },
+];
+
+const setCardData = document.getElementById('recent-frame-2');
+showItemInfo.forEach((itemsData, position) => {
+  let content = `<div class="card-work media-card-${position + 1}" id="card-work">`;
+  content += '<div class="post-right-block">';
+  content += `<h1 class="card-post-title" id="post-title">${itemsData.title}</h1>`;
+  content += '<p class="supporting-text" id="post-desc">';
+  content += ` ${itemsData.desc}`;
+  content += '</p>';
+  content += '<ul class="post-tags-2">';
+  for (let i = 0; i < itemsData.technologies.length; i + 1) {
+    content += `<li id="post-tech${i}}">${itemsData.technologies[i]}</li>`;
+  }
+  content += '</ul>';
+  content += '</div>';
+  content += `<div class="btn-action" data-modal-target="#modal" id="show-modal-${position + 1}">`;
+  content += '<div class="post-btn-enable-2">';
+  content += '<a class="btn-text">See Project</a>';
+  content += '</div>';
+  content += '</div>';
+  content += '</div>';
+
+  setCardData.innerHTML += content;
 });
-showModal1.addEventListener('click', () => {
+
+// modal work start
+function setData(Data) {
   document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
+  document.getElementById('postTitle').innerText = Data.title;
+  for (let j = 0; j < Data.technologies.length; j + 1) {
+    document.getElementById(`tech${j}`).innerText = Data.technologies[j];
+  }
+  document.getElementById('description').innerText = Data.description;
+  document.getElementById('image').style.backgroundImage = `url('${Data.image}')`;
+  document.getElementById('liveButton').setAttribute('href', Data.liveVersion);
+  document.getElementById('liveSource').setAttribute('href', Data.liveSource);
+}
+
+showItemInfo.forEach((itemsData2, ind) => {
+  document.getElementById('show-modal-'.concat(ind)).addEventListener('click', () => {
+    setData(itemsData2);
+  });
 });
-showModal2.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
-});
-showModal3.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
-});
-showModal4.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
-});
-showModal5.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
-});
-showModal6.addEventListener('click', () => {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('tech1').innerHTML = showItemInfo.technologies.tech1;
-  document.getElementById('tech2').innerHTML = showItemInfo.technologies.tech2;
-  document.getElementById('tech3').innerHTML = showItemInfo.technologies.tech3;
-  document.getElementById('description').innerText = showItemInfo.description;
-  document.getElementById('image').style.backgroundImage = `url('${showItemInfo.image}')`;
-  document.getElementById('liveButton').setAttribute('href', showItemInfo.liveVersion);
-  document.getElementById('liveSource').setAttribute('href', showItemInfo.liveSource);
-});
-closeModal.addEventListener('click', () => {
+document.getElementById('close-modal').addEventListener('click', () => {
   document.getElementById('modal').classList.remove('active');
 });
+
 // modal work End
