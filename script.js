@@ -80,28 +80,104 @@ myFunction(x); // Call listener function at run time
 
 // modal work start
 const showItemInfo = {
-  title: 'Multi-Post Stories',
-  image: '1.png',
-  description:
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  title: document.getElementById('h-title').innerText,
+  image: document.getElementById('post-img').getAttribute('src'),
+  description:document.getElementById('description').innerText,
   technologies: {
-    tech1: 'css',
-    tech2: 'html',
-    tech3: 'bootstrap',
-    tech4: 'ruby',
+    tech1: document.getElementById('post-tech1').innerText,
+    tech2: document.getElementById('post-tech2').innerText,
+    tech3: document.getElementById('post-tech3').innerText,
+    tech4: document.getElementById('post-tech4').innerText,
   },
   liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
   liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
 };
 const showModal = document.getElementById('show-modal');
+const showModal1 = document.getElementById('show-modal-1');
+const showModal2 = document.getElementById('show-modal-2');
+const showModal3 = document.getElementById('show-modal-3');
+const showModal4 = document.getElementById('show-modal-4');
+const showModal5 = document.getElementById('show-modal-5');
+const showModal6 = document.getElementById('show-modal-6');
 const closeModal = document.getElementById('close-modal');
 showModal.addEventListener('click', () => {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = showItemInfo.title;
-  document.getElementById('image').backgroundImage = URL(document.getElementById('post-img').getAttribute.URL);
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
   document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal1.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal2.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal3.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal4.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal5.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
+});
+showModal6.addEventListener('click', () => {
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('postTitle').innerText = showItemInfo.title;
+  document.getElementById('tech1').innerHTML =showItemInfo.technologies.tech1;
+  document.getElementById('tech2').innerHTML =showItemInfo.technologies.tech2;
+  document.getElementById('tech3').innerHTML =showItemInfo.technologies.tech3;
+  document.getElementById('description').innerText = showItemInfo.description;
+  document.getElementById('image').style.backgroundImage =  "url('"+showItemInfo.image+"')";
+  document.getElementById('liveButton').setAttribute('href',showItemInfo.liveVersion);
+  document.getElementById('liveSource').setAttribute('href',showItemInfo.liveSource);
 });
 closeModal.addEventListener('click', () => {
-  document.getElementById('moda').classList.remove('active');
+  document.getElementById('modal').classList.remove('active');
 });
 // modal work End
