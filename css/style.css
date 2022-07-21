@@ -136,6 +136,186 @@ p {
 
 /* Work Section Start  */
 
+.post-tags li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  padding: 5px;
+  color: #091e42;
+  border: 1px solid #000;
+  width: 85px;
+  height: 32px;
+  text-align: center;
+}
+
+.post-tags-2 > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  width: 85px;
+  height: 32px;
+  text-align: center;
+}
+
+/* Modal Start */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: nones;
+  align-items: center;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-container {
+  width: 343px;
+  height: 718px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  width: 311px;
+  height: 82px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-header span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.modal-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.modal-container ul li {
+  border: 1px solid #3c3a39;
+  padding: 5px;
+}
+
+.modal-body .modal-img {
+  margin-top: 30px;
+  width: 321px;
+  height: 220px;
+  background-image: url('/images/Snapshoot\ Portfolio.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.modal-buttons div {
+  background-color: #ff6b00;
+  padding: 10px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-live span {
+  margin: 10px;
+}
+
+.btn-live:hover {
+  background-color: #dfe1e6;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.btn-source span {
+  margin: 10px;
+}
+
+.btn-source:hover {
+  background-color: #dfe1e6;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.live-icon img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Modal End */
+
 /* Recent Work Section Start */
 
 .recent-work {
@@ -238,36 +418,6 @@ p {
   order: 2;
   flex-grow: 0;
   list-style: none;
-}
-
-.post-tags li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  padding: 5px;
-  color: #091e42;
-  border: 1px solid #000;
-  width: 85px;
-  height: 32px;
-  text-align: center;
-}
-
-.post-tags-2 > li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  padding: 5px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
-  width: 85px;
-  height: 32px;
-  text-align: center;
 }
 
 .skill-1 > ul > li {
@@ -1045,6 +1195,18 @@ p {
     cursor: pointer;
   }
 
+  .card-work .btn-action {
+    visibility: hidden;
+  }
+
+  .card-work:hover .btn-action {
+    visibility: visible;
+  }
+
+  .card-work:hover .post-right-block {
+    visibility: hidden;
+  }
+
   .media-card-2:hover {
     transform: 0.3s;
     background-image: url(../images/media-card-img-2.png);
@@ -1121,26 +1283,6 @@ p {
     flex-grow: 0;
   }
 
-  .card-work .btn-action {
-    visibility: hidden;
-  }
-
-  .post-right-block {
-    margin-top: 50px;
-  }
-
-  .media-card-1 .card-post-title {
-    visibility: hidden;
-  }
-
-  .media-card-1 .supporting-text {
-    visibility: hidden;
-  }
-
-  .media-card-1 .post-tags-2 {
-    visibility: hidden;
-  }
-
   .post-tags li:hover {
     background-color: #ff6b00;
     border: 0.1em solid #fff;
@@ -1148,11 +1290,6 @@ p {
     transition: 0.5s;
     transition-property: all;
     cursor: pointer;
-  }
-
-  .media-card-1 .btn-action {
-    margin-top: 40px;
-    visibility: visible;
   }
 
   .rectangle {
@@ -1170,11 +1307,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    /* padding: 130px 0px; */
     gap: 24px;
-
-    /* left: 142px; */
     background-image: url(../images/frame-2.png);
     background-repeat: no-repeat;
     background-position: center right;
@@ -1294,6 +1427,66 @@ p {
     padding: 0;
     position: absolute;
     margin-top: 0;
+  }
+
+  .modal {
+    display: block;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-container {
+    width: 92%;
+    height: 92%;
+    margin-left: 50px;
+  }
+
+  .modal-container ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-header {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .modal-body .modal-img {
+    width: 659px;
+    height: 398px;
+  }
+
+  .modal-body .p-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 424px;
+    height: 416px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px;
+    justify-content: space-between;
+  }
+
+  .p-content .modal-buttons {
+    margin-bottom: 0;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: start;
   }
 
   #s-icons > ul {
