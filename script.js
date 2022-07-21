@@ -12,15 +12,15 @@ const listItems3 = document.getElementById('item-list-3');
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
-    menuIcon.addEventListener('click', () => {
-      menuIcon.style.display = 'none';
-      xIcon.style.display = 'block';
-      menuList.style.display = 'block';
-      header.style.height = '755px';
-      about.style.marginTop = '755px';
-      maincontact.style.marginTop = '755px';
-      footer.style.top = '7358px';
-    });
+
+    menuIcon.style.display = 'none';
+    xIcon.style.display = 'block';
+    menuList.style.display = 'block';
+    header.style.height = '755px';
+    about.style.marginTop = '755px';
+    maincontact.style.marginTop = '755px';
+    footer.style.top = '7358px';
+
     xIcon.addEventListener('click', () => {
       menuIcon.style.display = 'block';
       xIcon.style.display = 'none';
@@ -76,8 +76,10 @@ function myFunction(x) {
   }
 }
 
-const x = window.matchMedia('(max-width: 768px)');
-myFunction(x); // Call listener function at run time
+menuIcon.addEventListener('click', () => {
+  const x = window.matchMedia('(max-width: 768px)');
+  myFunction(x);
+});
 
 const showItemInfo = [
   {
@@ -139,9 +141,9 @@ showItemInfo.forEach((itemsData, position) => {
   content += ` ${itemsData.desc}`;
   content += '</p>';
   content += '<ul class="post-tags-2">';
-  for (let i = 0; i < itemsData.technologies.length; i + 1) {
-    content += `<li id="post-tech${i}}">${itemsData.technologies[i]}</li>`;
-  }
+  itemsData.technologies.forEach((techData, pos) => {
+    content += `<li id="post-tech-${pos}">${techData}</li>`;
+  });
   content += '</ul>';
   content += '</div>';
   content += `<div class="btn-action" data-modal-target="#modal" id="show-modal-${position + 1}">`;
@@ -158,10 +160,12 @@ showItemInfo.forEach((itemsData, position) => {
 function setData(Data) {
   document.getElementById('modal').classList.add('active');
   document.getElementById('postTitle').innerText = Data.title;
-  for (let j = 0; j < Data.technologies.length; j + 1) {
-    document.getElementById(`tech${j}`).innerText = Data.technologies[j];
-  }
-  document.getElementById('description').innerText = Data.description;
+  document.getElementById('ul').innerHTML = '';
+  Data.technologies.forEach((techsItems) => {
+    const ul = document.getElementById('ul');
+    ul.innerHTML += `<li>${techsItems}</li>`;
+  });
+  document.getElementById('description').innerText = Data.desc;
   document.getElementById('image').style.backgroundImage = `url('${Data.image}')`;
   document.getElementById('liveButton').setAttribute('href', Data.liveVersion);
   document.getElementById('liveSource').setAttribute('href', Data.liveSource);
