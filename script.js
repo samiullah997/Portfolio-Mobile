@@ -8,6 +8,9 @@ const footer = document.getElementById('icons');
 const listItems1 = document.getElementById('item-list-1');
 const listItems2 = document.getElementById('item-list-2');
 const listItems3 = document.getElementById('item-list-3');
+const form = document.querySelector('form');
+const email = document.getElementById('email');
+const errorMsg = document.querySelector('small');
 
 function myFunction(x) {
   if (x.matches) {
@@ -181,3 +184,13 @@ document.getElementById('close-modal').addEventListener('click', () => {
 });
 
 // modal work End
+
+// form validation start
+
+form.addEventListener('submit', (e) => {
+  const emailValue = email.value;
+  if (emailValue !== emailValue.toLowerCase()) {
+    e.preventDefault();
+    errorMsg.classList.add('display-content');
+  }
+});

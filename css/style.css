@@ -926,6 +926,17 @@ p {
   margin-top: 73px;
 }
 
+small {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: none;
+}
+
+.display-content {
+  display: block;
+}
+
 @media (min-width: 768px) {
   body {
     width: wider;
@@ -1497,5 +1508,16 @@ p {
 
   .l-line {
     visibility: hidden;
+  }
+
+  small {
+    color: #ff0e0e;
+    text-align: left;
+    font-size: 12px;
+    display: none;
+  }
+
+  .display-content {
+    display: block;
   }
 }
