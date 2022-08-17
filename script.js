@@ -88,7 +88,7 @@ const showItemInfo = [
   {
     title: 'To Do List',
     image: './images/screen-short-1.png',
-    desc: "In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.",
+    desc: 'In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
     technologies: ['css', 'html', 'JavaScript'],
     liveVersion: 'http://kajjtech.me/To-Do-List/',
     liveSource: 'https://github.com/samiullah997/To-Do-List.git/',
@@ -197,7 +197,6 @@ function populateStorage() {
     email: form.elements.email.value,
     message: form.elements.comment.value,
   };
-  
   localStorage.setItem('userInput', JSON.stringify(userInput));
 }
 function setForm() {
