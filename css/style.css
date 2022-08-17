@@ -1519,11 +1519,8 @@ small {
   .display-content {
     display: block;
   }
-  .form {
-    margin-left: 0;
-  }
 
-  .form-btn{
+  .form-btn {
     display: flex;
     flex-direction: row;
     gap: 10px;
