@@ -86,25 +86,17 @@ menuIcon.addEventListener('click', () => {
 
 const showItemInfo = [
   {
-    title: 'Multi-Post Stories',
-    image: './images/img-placeholder-1.png',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
-    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+    title: 'To Do List',
+    image: './images/screen-short-1.png',
+    desc: "In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.",
+    technologies: ['css', 'html', 'JavaScript'],
+    liveVersion: 'http://kajjtech.me/To-Do-List/',
+    liveSource: 'https://github.com/samiullah997/To-Do-List.git/',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Multi-Post Stories 2',
     image: './images/img-placeholder-1.png',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
-    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
-  },
-  {
-    title: 'Multi-Post Stories',
-    image: './images/img-placeholder-1.png',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    desc: "A sami daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
     liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
@@ -194,3 +186,34 @@ form.addEventListener('submit', (e) => {
     errorMsg.classList.add('display-content');
   }
 });
+
+// form localStorage Setting
+const userName = form.elements.name;
+const userEmail = form.elements.email;
+const userMessage = form.elements.comment;
+function populateStorage() {
+  const userInput = {
+    name: form.elements.name.value,
+    email: form.elements.email.value,
+    message: form.elements.comment.value,
+  };
+  
+  localStorage.setItem('userInput', JSON.stringify(userInput));
+}
+function setForm() {
+  const storedInput = JSON.parse(localStorage.getItem('userInput'));
+  const currentUserName = storedInput.name;
+  const currentUserEmail = storedInput.email;
+  const currentMessage = storedInput.message;
+  form.elements.name.value = currentUserName;
+  form.elements.email.value = currentUserEmail;
+  form.elements.comment.value = currentMessage;
+}
+if (!localStorage.getItem('userInput')) {
+  populateStorage();
+} else {
+  setForm();
+}
+userName.onchange = populateStorage;
+userEmail.onchange = populateStorage;
+userMessage.onchange = populateStorage;

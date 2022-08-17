@@ -247,7 +247,7 @@ p {
   margin-top: 30px;
   width: 321px;
   height: 220px;
-  background-image: url('/images/Snapshoot\ Portfolio.svg');
+  background-image: url('/images/screen-short-1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1409,7 +1409,6 @@ small {
     display: flex;
     margin-left: 0;
     gap: 24px;
-    margin-right: 203px;
   }
 
   .footer {
@@ -1519,5 +1518,14 @@ small {
 
   .display-content {
     display: block;
+  }
+  .form {
+    margin-left: 0;
+  }
+
+  .form-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 }
