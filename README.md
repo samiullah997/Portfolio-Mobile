@@ -13,6 +13,9 @@
 To get a local copy up and running follow these simple example steps:
 ## prerequisites
 -must have git installed.
+-must have vscode installed or any other IDE.
+-must installed linters in the project
+
 
 ## setup
 - git clone https://samiullah997.github.io/Portfolio-Mobile/
