@@ -96,7 +96,7 @@ const showItemInfo = [
   {
     title: 'Book an Appointment',
     image: './images/book_an_appointment.png',
-    desc: "Bike reservation is a web application that allows users to view and reserve a bike, i.e. Yamaha, Suzuki Honda e.t.c. A user can reserve one bike per session on separate dates.",
+    desc: 'Bike reservation is a web application that allows users to view and reserve a bike, i.e. Yamaha, Suzuki Honda e.t.c. A user can reserve one bike per session on separate dates.',
     technologies: ['tailwind', 'html', 'react', 'redux', 'JavaScript', 'api'],
     liveVersion: 'https://deploy-preview-13--gilded-begonia-47c85d.netlify.app',
     liveSource: 'https://github.com/samiullah997/book_an_appointment_front_end',
@@ -104,7 +104,7 @@ const showItemInfo = [
   {
     title: 'Budget App',
     image: './images/bugdet_app.png',
-    desc: "Budget App is a web application that allows users to track their expenses and income. A user can add their income and expenses and the app will calculate the balance.",
+    desc: 'Budget App is a web application that allows users to track their expenses and income. A user can add their income and expenses and the app will calculate the balance.',
     technologies: ['tailwind', 'html', 'ruby on rails'],
     liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
     liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
@@ -112,7 +112,7 @@ const showItemInfo = [
   {
     title: 'Game of Life',
     image: './images/game_of_life.png',
-    desc: "In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.",
+    desc: 'In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
     technologies: ['css', 'html', 'scss', 'webpack', 'JavaScript'],
     liveVersion: 'https://duanedave.github.io/Capstone-Kanban',
     liveSource: 'https://github.com/samiullah997/Capstone-Kanban',
@@ -120,7 +120,7 @@ const showItemInfo = [
   {
     title: 'Book Store',
     image: './images/book_store.png',
-    desc: "In this project I am building a Bookstore CMS. The app will allow users to add books, remove books, and filter books by category. This simple web page will be built using React and Redux.",
+    desc: 'In this project I am building a Bookstore CMS. The app will allow users to add books, remove books, and filter books by category. This simple web page will be built using React and Redux.',
     technologies: ['css', 'html', 'react', 'redux', 'JavaScript'],
     liveVersion: 'https://subtle-brigadeiros-d2870f.netlify.app',
     liveSource: 'https://github.com/samiullah997/bookstore',

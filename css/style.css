@@ -602,7 +602,6 @@ p {
 
 .rectangle {
   position: absolute;
-  width: 375px;
   height: 1901px;
   left: 0;
   top: 4080px;
@@ -1165,7 +1164,6 @@ small {
     background-position: center;
   }
 
-
   .media-card:hover {
     transform: 0.5s;
     background-repeat: no-repeat;
@@ -1329,7 +1327,6 @@ small {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    
     width: 684px;
     height: 330px;
   }
