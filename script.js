@@ -125,6 +125,22 @@ const showItemInfo = [
     liveVersion: 'https://subtle-brigadeiros-d2870f.netlify.app',
     liveSource: 'https://github.com/samiullah997/bookstore',
   },
+  {
+    title: 'Super Heroes',
+    image: './images/super_hero.png',
+    desc: 'In this project I have created a single page application using React and Redux. The application fetches data from an API and displays it on the page. The user can filter the data by name and also get heroes to the movies.',
+    technologies: ['css', 'html', 'react', 'redux', 'JavaScript'],
+    liveVersion: 'https://fascinating-pastelito-bbdd20.netlify.app',
+    liveSource: 'https://github.com/samiullah997/thired-capstone-project',
+  },
+  {
+    title: 'Math-Magicians',
+    image: './images/calculater.png',
+    desc: 'In this project, you should continue with the development of the Math Magicians app. You will develop a React component that will hold the core functionality: a calculator. The basic operations are addition, subtraction, multiplication, and division. You will also need to add some styling to your components.',
+    technologies: ['css', 'html', 'react', 'redux', 'JavaScript'],
+    liveVersion: 'https://neon-gaufre-c1a782.netlify.app',
+    liveSource: 'https://github.com/samiullah997/math-magicians',
+  },
 ];
 
 const setCardData = document.getElementById('recent-frame-2');
