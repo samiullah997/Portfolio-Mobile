@@ -1,5 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 21.5ch;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+
+  10% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(-3px, 0) rotate(1deg);
+  }
+
+  100% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+}
+
 * {
   margin: 0;
   border: 0;
@@ -22,6 +88,21 @@ header {
 .logo {
   height: 30px;
   margin: 2% 2%;
+}
+
+.logo-text {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 nav {
@@ -68,6 +149,7 @@ nav #x-icon {
 
 .hidden .email-icon {
   display: none;
+  animation: shake 0.5s 2;
 }
 
 .hidden li {
@@ -114,6 +196,15 @@ h4 {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
+}
+
+.wrapper > h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #f8f4f4;
+  animation:
+    cursor 1s step-start infinite,
+    text 5s steps(18) alternate infinite;
 }
 
 p {
@@ -516,6 +607,13 @@ p {
 .media-card {
   background-color: grey;
   background-blend-mode: multiply;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.media-card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .post-right-block {
