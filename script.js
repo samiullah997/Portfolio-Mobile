@@ -90,7 +90,7 @@ const showItemInfo = [
     image: './images/screen-short-1.png',
     desc: 'In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
     technologies: ['css', 'html', 'JavaScript'],
-    liveVersion: 'samik997-to-do-list.netlify.app',
+    liveVersion: 'https://samik997-to-do-list.netlify.app/',
     liveSource: 'https://github.com/samiullah997/To-Do-List.git/',
   },
   {
