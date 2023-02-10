@@ -106,8 +106,8 @@ const showItemInfo = [
     image: './images/bugdet_app.png',
     desc: 'Budget App is a web application that allows users to track their expenses and income. A user can add their income and expenses and the app will calculate the balance.',
     technologies: ['tailwind', 'html', 'ruby on rails'],
-    liveVersion: 'https://samiullah997.github.io/Portfolio-Mobile/',
-    liveSource: 'https://github.com/samiullah997/Portfolio-Mobile',
+    liveVersion: 'https://budget-app-sami.herokuapp.com/',
+    liveSource: 'https://github.com/samiullah997/Budget-App.git',
   },
   {
     title: 'Game of Life',
