@@ -1,0 +1,446 @@
+// Mobile Nav Toggle
+const mobileBtn = document.querySelector(".mobile-toggle-btn");
+const headerNav = document.querySelector(".header");
+const navLink = document.querySelectorAll(".link-nav");
+const profilePic = document.querySelector(".profile-pic");
+
+mobileBtn.addEventListener("click", () => {
+  headerNav.classList.toggle("active");
+  profilePic.classList.toggle("hide-profile");
+});
+
+[].forEach.call(navLink, (element) => {
+  element.onclick = () => {
+    headerNav.classList.remove("active");
+  };
+});
+
+// Implement Dynamic Functionality for cards and modal
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("myModal");
+  const gridItems = document.getElementById("grid");
+
+  // Create a new object
+  const mainCardDetails = {
+    title: "Leaderboard",
+    desc: "In this activity I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I have develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript async and await…",
+    languages: ["Html", "Css", "JavaScript", "ReactJS"],
+    live: "https://sami-leader-board.netlify.app/",
+    source: "https://github.com/samiullah997/Leaderboard.git",
+    img: "./assets/project-img/leaderboard.png",
+  };
+
+  const {
+    title, desc, languages, live, source, img,
+  } = mainCardDetails;
+  // Get all data from languages array in side mainCardDetails object
+  const languagesArr = languages
+    .map((language) => `<li>${language}</li>`)
+    .join("");
+
+  // Add dynamic data in main card
+  let mainCardData = "";
+  mainCardData += `
+                  <h1 class='work-main-heading'>My Recent Works</h1>
+                  <hr class='divider' />
+                  <div class='main-card' id='main'>
+                    <img src=${img} class='post-image'/>
+                    <div class='main-card-content'>
+                      <h4 class='work-title-post'>${title}</h4>
+                      <p class='work-supporting-text'>
+                      ${desc.slice(0, 100)} ...
+                      </p>
+                      <ul class='languages-list'>
+                        ${languagesArr}
+                      </ul>
+                      <div class='btn-left'>
+                        <button class='btn-primary btn' onclick='mainModal()'>See Project</button>
+                      </div>
+                    </div>
+                  </div>
+  `;
+
+  // Create new array of objects
+  const cardDetails = [
+    {
+      id: 1,
+      title: 'To Do List',
+      img: './assets/project-img/screen-short-1.png',
+      desc: 'In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
+      languages: ['css', 'html', 'JavaScript'],
+      live: 'https://samik997-to-do-list.netlify.app/',
+      source: 'https://github.com/samiullah997/To-Do-List.git/',
+    },
+    {
+      id: 2,
+      title: 'Book an Appointment',
+      img: './assets/project-img/book_an_appointment.png',
+      desc: 'Bike reservation is a web application that allows users to view and reserve a bike, i.e. Yamaha, Suzuki Honda e.t.c. A user can reserve one bike per session on separate dates.',
+      languages: ['tailwind', 'html', 'react', 'redux', 'JavaScript', 'api'],
+      live: 'https://deploy-preview-13--gilded-begonia-47c85d.netlify.app',
+      source: 'https://github.com/samiullah997/book_an_appointment_front_end',
+    },
+    {
+      id: 3,
+      title: 'Budget App',
+      img: './assets/project-img/bugdet_app.png',
+      desc: 'Budget App is a web application that allows users to track their expenses and income. A user can add their income and expenses and the app will calculate the balance.',
+      languages: ['tailwind', 'html', 'ruby on rails'],
+      live: 'https://budget-app-sami.herokuapp.com/',
+      source: 'https://github.com/samiullah997/Budget-App.git',
+    },
+    {
+      id: 4,
+      title: 'Game of Life',
+      img: './assets/project-img/game_of_life.png',
+      desc: 'In this project, I am building a simple HTML list of To Do tasks. The list will be styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
+      languages: ['css', 'html', 'scss', 'webpack', 'JavaScript'],
+      live: 'https://duanedave.github.io/Capstone-Kanban',
+      source: 'https://github.com/samiullah997/Capstone-Kanban',
+    },
+    {
+      id: 5,
+      title: 'Book Store',
+      img: './assets/project-img/book_store.png',
+      desc: 'In this project I am building a Bookstore CMS. The app will allow users to add books, remove books, and filter books by category. This simple web page will be built using React and Redux.',
+      languages: ['css', 'html', 'react', 'redux', 'JavaScript'],
+      live: 'https://subtle-brigadeiros-d2870f.netlify.app',
+      source: 'https://github.com/samiullah997/bookstore',
+    },
+    {
+      id: 6,
+      title: 'Super Heroes',
+      img: './assets/project-img/super_hero.png',
+      desc: 'In this project I have created a single page application using React and Redux. The application fetches data from an API and displays it on the page. The user can filter the data by name and also get heroes to the movies.',
+      languages: ['css', 'html', 'react', 'redux', 'JavaScript'],
+      live: 'https://fascinating-pastelito-bbdd20.netlify.app',
+      source: 'https://github.com/samiullah997/thired-capstone-project',
+    },
+    {
+      id: 7,
+      title: 'Math-Magicians',
+      img: './assets/project-img/calculater.png',
+      desc: 'In this project, you should continue with the development of the Math Magicians app. You will develop a React component that will hold the core functionality: a calculator. The basic operations are addition, subtraction, multiplication, and division. You will also need to add some styling to your components.',
+      languages: ['css', 'html', 'react', 'redux', 'JavaScript'],
+      live: 'https://neon-gaufre-c1a782.netlify.app',
+      source: 'https://github.com/samiullah997/math-magicians',
+    },
+  ];
+
+  // Fetch all cards details from cardsDetails array of objects
+  let cardData = "";
+  cardDetails.map((card) => {
+    const {
+      id, img, title, desc, languages,
+    } = card;
+    // Fetch languages array from a languages object
+    const languagesArr = languages.map((lang) => `<li>${lang}</li>`).join("");
+    // Add dynamic in other cards
+    cardData += `
+                <div class='card-desktop' id='card-image-${id}'>
+                  <img src='${img}' alt='card image' />
+                  <div class='card-info'>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
+                    <ul class='card-languages-list'>
+                      ${languagesArr}
+                    </ul>
+                    <button
+                      class='btn-block btn-primary btn-hidden'
+                      onclick='otherModal(${id})'
+                    >
+                      See Project
+                    </button>
+                  </div>
+                </div>
+                <div class='card'>
+                  <img src='${img}' alt='card image' />
+                  <div class='card-info'>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
+                    <ul class='card-languages-list'>
+                      ${languagesArr}
+                    </ul>
+                    <button
+                      class='btn-block btn-primary btn'
+                      onclick='otherModal(${id})'
+                    >
+                      See Project
+                    </button>
+                  </div>
+                </div>
+    `;
+    return cardData;
+  });
+
+  // Show all data in main and other cards
+  gridItems.innerHTML = mainCardData + cardData;
+
+  // Add dynamic modal for main cards data
+  mainModal = () => {
+    let modalDetails = "";
+    modalDetails += `
+                    <div class='modal'>
+                      <div class='modal-header'>
+                        <h1>${title}</h1>
+                        <ion-icon name='close' class='modal-close-icon'></ion-icon>
+                      </div>
+                      <ul class='modal-languages-list'>
+                        ${languages.map((lang) => `<li>${lang}</li>`).join("")}
+                      </ul>
+                      <div class='modal-content'>
+                        <div class='modal-image-mobile'>
+                          <img src='${img}' alt='modal image' />
+                        </div>
+                        <div class='modal-image-desktop'>
+                          <img src='${img}' alt='modal image' />
+                        </div>
+                        <p class='title'>${desc}</p>
+                      </div>
+                      <div class='buttons'>
+                        <a href='${live}' class='btn-primary' target='_blank'>
+                          See Live
+                          <span>
+                            <img  src='./assets/images/Icon-Export.svg'
+                                  alt='live-icon'
+                                  class='icon-right'
+                                  height='18'/>
+                            </span>
+                        </a>
+                        <a href='${source}' class='btn-primary' target='_blank'>
+                          See Source
+                          <span>
+                          <img  src='./assets/images/Icon-GitHub.svg'
+                                alt='live-icon'
+                                class='icon-right'
+                                height='18'/>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+  `;
+
+    // Show Data in modal
+    modal.innerHTML = modalDetails;
+
+    // Open modal
+    modal.style.display = "block";
+
+    // Close modal
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  };
+
+  // Add dynamic modal details for other cards
+  otherModal = (id) => {
+    const data = cardDetails.find((card) => card.id === id);
+    let modalData = "";
+    modalData += `
+                  <div class='modal'>
+                    <div class='modal-header'>
+                      <h1>${data.title}</h1>
+                      <ion-icon name='close' class='modal-close-icon'></ion-icon>
+                    </div>
+                    <ul class='modal-languages-list'>
+                      ${data.languages
+    .map((lang) => `<li>${lang}</li>`)
+    .join("")}
+                    </ul>
+                    <div class='modal-content'>
+                      <div class='modal-image-mobile'>
+                        <img src='${data.img}' alt='modal image' />
+                      </div>
+                      <div class='modal-image-desktop'>
+                        <img src='${data.img}' alt='modal image' />
+                      </div>
+                      <p class='title'>${data.desc}</p>
+                    </div>
+                    <div class='buttons'>
+                      <a href='${data.live
+}' class='btn-primary' target='_blank'>
+                          See Live
+                          <span>
+                            <img  src='./assets/images/Icon-Export.svg'
+                                alt='live-icon'
+                                class='icon-right'
+                                height='18'/>
+                          </span>
+                      </a>
+                      <a href='${data.source
+}' class='btn-primary' target='_blank'>
+                        See Source
+                        <span>
+                          <img  src='./assets/images/Icon-GitHub.svg'
+                              alt='live-icon'
+                              class='icon-right'
+                              height='18'/>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+    `;
+
+    // Show Data in modal
+    modal.innerHTML = modalData;
+
+    // Open modal
+    modal.style.display = "block";
+
+    // Close modal
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  };
+
+  // When user clicks out side of the modal, close the modal.
+  document.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  new Typed(".auto-change", {
+    strings: [
+      "Web Developer",
+      "Full Stack Developer",
+      "Android Developer",
+      "Front-end Developer",
+      "React Native Developer",
+    ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  });
+});
+
+// Form Validation
+const email = document.getElementById("email");
+const fullName = document.getElementById("fullName");
+const message = document.getElementById("message");
+const submit = document.getElementById("submit");
+const alert = document.getElementById("alert-danger");
+
+const submitForm = (e) => {
+  e.preventDefault();
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
+  const emailValue = email.value;
+  const nameValue = fullName.value;
+  const messageValue = message.value;
+
+  const showAlert = (message) => {
+    alert.classList.add("show-alert");
+    if (message === "Message sent successfully!") {
+      alert.innerHTML = `<span> <ion-icon name="checkmark" class="alert-icon"></ion-icon> </span> ${message}`;
+    } else {
+      alert.innerHTML = `<span> <ion-icon name="close-circle" class="alert-icon"></ion-icon> </span> ${message}`;
+    }
+    setTimeout(() => {
+      alert.classList.remove("show-alert");
+      alert.classList.remove("alert-success");
+    }, 2500);
+  };
+
+  if (!nameValue || !emailValue || !messageValue) {
+    showAlert("Please enter all required fields");
+    return;
+  }
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    showAlert("Please enter lowercase letters.");
+    return;
+  }
+
+  if (!regex.test(emailValue)) {
+    showAlert("Invalid email address!");
+    return;
+  }
+
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "aamir.khan2478@gmail.com",
+    Password: "660EC2AB2AB9343D6BE9C8AED37DDD75DF15",
+    To: "aamir.khan2478@gmail.com",
+    From: "aamir.khan2478@gmail.com",
+    Subject: "Contact Information",
+    Body: `Name: ${nameValue} <br/> Email: ${emailValue} <br/> Message: ${messageValue}`,
+  }).then((msg) => {
+    if (msg === "OK") {
+      alert.classList.add("show-alert");
+      alert.classList.add("alert-success");
+      showAlert("Message sent successfully!");
+    }
+    email.value = "";
+    fullName.value = "";
+    message.value = "";
+    localStorage.removeItem("user");
+  });
+};
+
+submit.addEventListener("click", submitForm);
+
+// Store data in localStorage
+const reset = document.getElementById("reset");
+
+changeHandler = () => {
+  const field = {
+    name: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem("user", JSON.stringify(field));
+};
+
+if (localStorage.getItem("user") === null) {
+  email.value = "";
+  fullName.value = "";
+  message.value = "";
+} else {
+  const user = JSON.parse(localStorage.getItem("user"));
+  email.value = user.email;
+  fullName.value = user.name;
+  message.value = user.message;
+}
+
+const resetFrom = (e) => {
+  e.preventDefault();
+  email.value = "";
+  fullName.value = "";
+  message.value = "";
+  localStorage.removeItem("user");
+};
+
+reset.addEventListener("click", resetFrom);
+
+// Select all the sections and nav links
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+// Add an event listener to the window that listens for a scroll event
+document.addEventListener("scroll", () => {
+  // Get the current position of the window
+  const currentPosition = window.scrollY + 80;
+  // Loop through all the sections
+  sections.forEach((section) => {
+    // Check if the current position is within the section
+    if (
+      section.offsetTop <= currentPosition
+      && section.offsetTop + section.offsetHeight > currentPosition
+    ) {
+      // Loop through all the nav links
+      navLinks.forEach((link) => {
+        // Remove the active class from all the nav links
+        link.classList.remove("nav-active");
+        // Check if the section id is the same as the nav link href
+        if (
+          section.getAttribute("id") === link.getAttribute("href").substring(1)
+        ) {
+          // Add the active class to the nav link
+          link.classList.add("nav-active");
+        }
+      });
+    }
+  });
+});
