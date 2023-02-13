@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps:
 
 
 ## LIVE DEMO
-https://samiullah997.github.io/Portfolio-Mobile/
+[Portfolio](https://sami-portfolio-site.netlify.app/)
 
 ## SCREENSHOTS
 
