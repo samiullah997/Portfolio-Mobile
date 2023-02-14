@@ -3,259 +3,189 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Hi, welcome to My Personal Portfolio. This is where I keep all of my work." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Sami Ullah</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
 </head>
 
 <body>
-    <!--Nav menu and the logo-->
-
-    <header id="header">
-        <div class="logo">
-            <a href="#">Sami</a>
-        </div>
-        <nav>
-            <i class="fa fa-bars menu-icon" id="menu-icon"></i>
-            <i class="fa fa-xmark menu-icon" id="x-icon"></i>
-            <ul class="hidden" id="hidden">
-                <li class="ab" id="item-list-1"><a href="#porfolio">Portfolio</a></li>
-                <li class="cb" id="item-list-2"><a href="#about">About</a></li>
-                <li class="db" id="item-list-3">
-                    <a href="#maincontact">Contact</a>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="nav-header">
+        <a href="#">
+            <h2 class="logo">Sami</h2>
+        </a>
+        <nav class="navbar">
+            <ul class="nav-flex">
+                <li class="nav-link">
+                    <a href="#work" class="link-nav">Portfolio</a>
                 </li>
-                <li class="email-icon">
-                    <a href="#"><img src="./images/message-icon.png" alt="" /></a>
+                <li class="nav-link">
+                    <a href="#about" class="link-nav">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact" class="link-nav">Contact</a>
                 </li>
             </ul>
         </nav>
+        <div class="mobile-toggle-btn">
+            <ion-icon name="menu" class="icon-menu"></ion-icon>
+            <ion-icon name="close" class="icon-menu"></ion-icon>
+        </div>
     </header>
-    <!--Home section-->
-    <section class="content" id="porfolio">
-        <div class="wrapper">
-            <h1>Hey There. I’m Sami</h1>
-            <h4>I’am a Software Developer</h4>
-            <p>
-                I can help you build a product , feature or website Look through some
+
+    <!--=============== HERO SECTION===============-->
+    <section id="hero" class="hero-section">
+        <div class="intro-portion">
+            <h1 class="main-heading">Hey There. I'm Sami</h1>
+            <h3 class="supporting-text">I'm a <span class="auto-change"></span></h3>
+            <p class="description-text">
+                I can help you build a product , feature or website. Look through some
                 of my work and experience! If you like what you see and have a project
-                you need coded, don’t hestiate to contact me.
+                you need coded, don't hesitate to contact me.
             </p>
         </div>
-
-        <div class="wrapper-2">
-            <ul class="icons">
-                <li>
-                    <a href="#"><img src="./images/1.png" alt="github" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/2.png" alt="linkdin" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/3.png" alt="gulp" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/4.png" alt="twiter" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/5.png" alt="M_logo" /></a>
-                </li>
-            </ul>
-        </div>
+        <a href="#contact" class="btn-primary" rel="noopener">Contact Me <i class="fa fa-envelope"></i></a>
+        <ul class="social-media-icons">
+            <li>
+                <a href="https://github.com/samiullah997" target="_blank" rel="noopener">
+                    <div class="hero-github-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/sami-full-stack/" target="_blank" rel="noopener">
+                    <div class="hero-linkedin-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://angel.co/u/samiullahk997" target="_blank" rel="noopener">
+                    <div class="hero-angel-list-icon"></div>
+                </a>
+            </li>
+        </ul>
+        <div class="profile-pic"></div>
+        <div class="main-image"></div>
     </section>
-    <!-- Recent Work Start -->
 
-    <!-- Modal Start -->
-    <div class="modal" id="modal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h2 id="postTitle">Multi Post Stories</h2>
-                <span id="close-modal">&times;</span>
-            </div>
-            <ul id="ul">
-            </ul>
-            <div class="modal-body">
+    <!--=============== WORK SECTION ===============-->
+    <section id="work" class="work-section">
+        <div class="grid-items" id="grid"></div>
+    </section>
 
-                <div class="modal-img" id="image"></div>
-                <div class="p-content">
-                    <p id="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting,
-                        remaining essent
-                    </p>
-                    <div class="modal-buttons">
-                        <a href="#" id="liveButton">
-                            <div class="btn-live">
-                                See Live
-                                <span class="live-icon"><img src="./images/btn-live-icon.png" alt="live icon" /></span>
-                            </div>
-                        </a>
-                        <a href="#" id="liveSource">
-                            <div class="btn-source">
-                                See Source<span class="live-icon"><img src="./images/git-white-icon.png"
-                                        alt="Github icon" /></span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="overlay"></div>
-    <!-- modal end -->
-
-    <section class="recent-work" id="work">
-        <div class="title">
-            <h1 class="h-title">My Recent Works</h1>
-            <div id="h-line"></div>
-        </div>
-        <div class="recent-frame-1">
-            <div>
-                <img class="post-img" id="post-img" src="./images/screen-short-1.png" alt="image placeholder" />
-            </div>
-            <div class="post-details">
-                <h1 class="h-title" id="h-title">To Do List</h1>
-                <p class="post-description" id="desc">
-                    In this project, I am building a simple HTML list of To Do tasks. The list will be styled according
-                    to the specifications. This simple web page will be built using webpack and served by a webpack dev
-                    server.
+    <!--=============== ABOUT SECTION ===============-->
+    <section id="about" class="about-section">
+        <div class="about-flex">
+            <div class="about-content">
+                <h1 class="about-heading">About me</h1>
+                <p class="about-description">
+                    Hello, my name is Samiullah. I am A full-stack web developer. I can learn new
+                    things quickly, through collaboration, communication, pair programming, and remote work. I am
+                    looking forward to becoming a proficient full-Stack software developer and utilizing my creativity
+                    to create better software and solve various real-world challenges. If you like
+                    what you see and have a project you need coded, don't hesitate to
+                    contact me.
                 </p>
-                <ul class="post-tags">
-                    <li id="post-tech1">css</li>
-                    <li id="post-tech2">html</li>
-                    <li id="post-tech3">bootstrap</li>
+                <div class="btn-left" id="btn-id">
+                    <a href="https://drive.google.com/file/d/1lCSqrSKJ6IJjAr_RtBr5ajaDlrshhkx4/view?usp=sharing"
+                        target="_blank" rel="noopener" class="btn-primary">Get My Resume</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="about-image"></div>
+            </div>
+        </div>
+        <hr />
+        <ul class="about-list">
+            <li class="language-list">
+                Language
+                <ul>
+                    <li class="list-style-none">Javascript</li>
+                    <li class="list-style-none">Ruby</li>
+                    <li class="list-style-none">Java</li>
+                    <li class="list-style-none">Html</li>
+                    <li class="list-style-none">Css</li>
                 </ul>
-                <button data-modal-target="#modal" id="show-modal-0" class="post-btn-enable" type="button">
-                    See Project
+            </li>
+            <li class="frameworks-list">
+                Frameworks
+                <ul>
+                    <li class="list-style-none">Bootstrap</li>
+                    <li class="list-style-none">Ruby on Rails</li>
+                    <li class="list-style-none">React Js</li>
+                    <li class="list-style-none">Spring Boot</li>
+                    <li class="list-style-none">Material UI</li>
+                    <li class="list-style-none">Tailwind CSS</li>
+                </ul>
+            </li>
+            <li class="skills-list">
+                Skills
+                <ul>
+                    <li class="list-style-none">Codekit</li>
+                    <li class="list-style-none">Github</li>
+                    <li class="list-style-none">Codepen</li>
+                    <li class="list-style-none">Terminal</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!--=============== CONTACT SECTION ===============-->
+    <section id="contact" class="contact-section">
+        <h3 class="contact-heading">
+            I'm always interested in hearing about new projects, so if you'd like to
+            chat please get in touch.
+        </h3>
+        <form class="form-control">
+            <input placeholder="Full Name" class="text-field" type="text" name="name" id="fullName"
+                onchange="changeHandler()" maxlength="30" required />
+            <input placeholder="Email Address" class="text-field" type="email" name="email" id="email"
+                onchange="changeHandler()" required />
+            <textarea class="message-field" placeholder="Enter text here" name="message" id="message"
+                onchange="changeHandler()" maxlength="500" required></textarea>
+            <div>
+                <button type="submit" class="btn-primary" id="submit">
+                    Get In Touch
                 </button>
+                <button class="btn-primary" id="reset">Reset</button>
             </div>
-        </div>
-        <div class="recent-frame-2" id="recent-frame-2">
-
-        </div>
+            <div class="alert" id="alert-danger"></div>
+        </form>
     </section>
-    <!-- Recent Work End -->
 
-    <!-- About Section Start -->
-    <section class="rectangle" id="about">
-        <div class="about" id="sub-about">
-            <h1 class="about-title">About me</h1>
-            <p class="about-description">
-                Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience! If you
-                like what you see and have a project you need coded, don’t hestiate to
-                contact me.
-            </p>
-            <a href="#" class="about-btn"><span class="about-btn-title">Get My Resume</span></a>
-        </div>
-        <div class="divider">
-            <div class="vector-1"></div>
-        </div>
-        <!-- Skill div Start -->
-        <div class="skill">
-            <div class="skill-1">
-                <div class="skill-frame-1">
-                    <img class="img-rectangle" src="./images/rectangle.png" alt="" />
-                    <span class="img-title">Language</span>
-                </div>
-                <ul class="skill-ul">
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
-            </div>
-            <div class="skill-1">
-                <div class="skill-frame-1 left-skill">
-                    <img class="img-rectangle" src="./images/square.png" alt="" />
-                    <span class="img-title">Frameworks</span>
-                </div>
-                <ul class="skill-ul">
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>Rspec</li>
-                    <li>CampyBara</li>
-                    <li>Selenium</li>
-                </ul>
-            </div>
-            <div class="skill-1">
-                <div class="skill-frame-1 right-skill">
-                    <img class="img-rectangle" src="./images/circle.png" alt="" /><span class="img-title">Skills</span>
-                </div>
-                <ul class="skill-ul">
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Skill div End -->
-    </section>
-    <!-- About Section End -->
-
-    <!-- Contact Form Start -->
-
-    <footer id="footer">
-        <div id="maincontact">
-            <div class="contact">
-                <h2>
-                    I'm always interested in hearing about new projects, so if you'd
-                    like to chat please get in touch.
-                </h2>
-            </div>
-            <form action="https://formspree.io/f/mrgjwpjk" method="post" class="form-contact" id="form">
-                <div id="form-contact">
-                    <input type="text" id="name" class="name" maxlength="30" required name="name"
-                        placeholder="Full name" />
-                    <input type="email" class="email" id="email" name="email" required placeholder="Email Address" />
-                    <small>Please enter email address in small letters!!</small>
-                    <textarea class="comment" id="comment" maxlength="500" name="comment" required cols="30" rows="5"
-                        placeholder="Enter text here"></textarea>
-                    <div class="form-btn">
-                        <button id="submit" class="form" type="submit">Get in touch</button>
-                        <button id="reset" class="form" type="reset">Reset</button>
-                    </div>
-
-                </div>
-            </form>
-        </div>
-        <div class="footer" id="icons">
-            <hr id="c-line" />
-            <div id="s-icons">
-                <ul class="icon-style">
-                    <li>
-                        <a href="#"><img src="./images/1.png" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/2.png" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/3.png" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/4.png" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/5.png" alt="" /></a>
-                    </li>
-                </ul>
-                <!-- <img src="/images/social-media-icon.png" alt=""> -->
-            </div>
-            <div class="l-line">
-                <img src="./images/light.png" alt="" />
-            </div>
-        </div>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <hr />
+        <ul class="footer-social-icons">
+            <li>
+                <a href="https://github.com/samiullah997" target=" _blank" rel="noopener">
+                    <div class="github-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/sami-full-stack" target=" _blank" rel="noopener">
+                    <div class="linkedin-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://angel.co/u/samiullahk997" target=" _blank" rel="noopener">
+                    <div class="angel-list-icon"></div>
+                </a>
+            </li>
+        </ul>
     </footer>
 
-    <!-- Contact Form End -->
-
-    <script src="script.js"></script>
+    <!--=============== MODAL ===============-->
+    <div class="modal-container" id="myModal"></div>
 </body>
 
 </html>
