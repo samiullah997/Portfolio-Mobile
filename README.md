@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps:
@@ -20,6 +21,7 @@ To get a local copy up and running follow these simple example steps:
 ## setup
 - git clone https://samiullah997.github.io/Portfolio-Mobile/
 - cd Portfolio-Mobile
+- code .
 
 
 ## Authors

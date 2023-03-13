@@ -228,6 +228,18 @@ a {
   height: 40px;
 }
 
+.hero-twitter-list-icon {
+  background-image: url("../images/hero-twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-medium-list-icon {
+  background-image: url("../images/hero-medium.svg");
+  width: 40px;
+  height: 40px;
+}
+
 .main-image {
   background-image: url("../images/main-image.svg");
   background-size: contain;
@@ -668,6 +680,18 @@ a {
 
 .angel-list-icon {
   background-image: url("../images/angellist.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.twitter-list-icon {
+  background-image: url("../images/twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.medium-list-icon {
+  background-image: url("../images/medium.svg");
   width: 40px;
   height: 40px;
 }
