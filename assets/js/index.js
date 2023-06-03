@@ -64,6 +64,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardDetails = [
     {
       id: 1,
+      title: 'Public Internet Speed Test',
+      img: './assets/project-img/pist.png',
+      desc: 'In this project, I built a speed test app that tests the speed of your internet connection. The app is built with React and Redux. The app is deployed on netlify. Internet Speed Test is a web application that tests the speed of your internet connection. The app is built with React and Redux. The app is deployed on netlify.',
+      languages: ['Rails', 'React', 'Tailwind', 'Redux', 'JavaScript', 'API'],
+      live: 'https://public-internet-speed.netlify.app',
+      source: 'https://github.com/samiullah997/internet-speed-test-front-end.git',
+    },
+    {
+      id: 2,
       title: 'To Do List',
       img: './assets/project-img/screen-short-1.png',
       desc: 'I built a simple HTML list of To Do tasks in this project. The list is styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
@@ -72,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/To-Do-List.git/',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Book an Appointment',
       img: './assets/project-img/book_an_appointment.png',
       desc: 'Bike reservation is a web application that allows users to view and reserve a bike, i.e., Yamaha, Suzuki, Honda, etc. A user can reserve one bike per session on separate dates. Built with React and Ruby on Rails.',
@@ -81,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/book_an_appointment_front_end',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Budget App',
       img: './assets/project-img/bugdet_app.png',
       desc: 'Budget App is a web application that allows users to track their expenses and income. Users can add their income and expenses, and the app will calculate the balance. Built with Ruby on rails and Bootstrap.',
@@ -90,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/Budget-App.git',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Game of Life',
       img: './assets/project-img/game_of_life.png',
       desc: 'In this project, I built a simple HTML list of To-Do tasks. The app is styled according to the specifications and framework. This simple web page is built using webpack and served by a webpack dev server.',
@@ -99,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/Capstone-Kanban',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Book Store',
       img: './assets/project-img/book_store.png',
       desc: 'In this project, I built a Bookstore CMS. The app allows users to add, remove, and filter books by category. This simple web page is built using React and Redux.',
@@ -108,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/bookstore',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Super Heroes',
       img: './assets/project-img/super_hero.png',
       desc: 'In this project, I created a single-page application using React and Redux. The application fetches data from an API and displays it on the page. The user can filter the data by name and get movie heroes.',
@@ -117,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
       source: 'https://github.com/samiullah997/thired-capstone-project',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Math-Magicians',
       img: './assets/project-img/calculater.png',
       desc: 'In this project, I created a  Math Magicians app. I developed the app using React components that hold the core functionality: a calculator. The primary operations are addition, subtraction, multiplication, and division. I styled the app using Bootstrap.',
