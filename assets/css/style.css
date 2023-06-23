@@ -251,7 +251,7 @@ a {
 }
 
 .profile-pic {
-  background-image: url("../project-img/profile_pic.jpg");
+  background-image: url("../images/profile.gif");
   background-position: center;
   background-size: contain;
   height: 70px;
