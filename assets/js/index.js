@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     languages: ["Html", "Css", "JavaScript", "ReactJS"],
     live: "https://sami-leader-board.netlify.app/",
     source: "https://github.com/samiullah997/Leaderboard.git",
-    img: "./assets/project-img/leaderboard.png",
+    img: "./assets/project-img/leaderboard.gif",
   };
 
   const {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 1,
       title: 'Public Internet Speed Test',
-      img: './assets/project-img/pist.png',
+      img: './assets/project-img/pist.gif',
       desc: 'In this project, I built a speed test app that tests the speed of your internet connection. The app is built with React and Redux. The app is deployed on netlify. Internet Speed Test is a web application that tests the speed of your internet connection. The app is built with React and Redux. The app is deployed on netlify.',
       languages: ['Rails', 'React', 'Tailwind', 'Redux', 'JavaScript', 'API'],
       live: 'https://public-internet-speed.netlify.app',
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 2,
       title: 'To Do List',
-      img: './assets/project-img/screen-short-1.png',
+      img: './assets/project-img/screen-short-1.gif',
       desc: 'I built a simple HTML list of To Do tasks in this project. The list is styled according to the specifications. This simple web page will be built using webpack and served by a webpack dev server.',
       languages: ['CSS', 'HTML', 'JavaScript'],
       live: 'https://samik997-to-do-list.netlify.app/',
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 3,
       title: 'Book an Appointment',
-      img: './assets/project-img/book_an_appointment.png',
+      img: './assets/project-img/book_an_appointment.gif',
       desc: 'Bike reservation is a web application that allows users to view and reserve a bike, i.e., Yamaha, Suzuki, Honda, etc. A user can reserve one bike per session on separate dates. Built with React and Ruby on Rails.',
       languages: ['Tailwind', 'HTML', 'React', 'Redux', 'JavaScript', 'API'],
       live: 'https://deploy-preview-13--gilded-begonia-47c85d.netlify.app',
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 4,
       title: 'Budget App',
-      img: './assets/project-img/bugdet_app.png',
+      img: './assets/project-img/bugdet_app.gif',
       desc: 'Budget App is a web application that allows users to track their expenses and income. Users can add their income and expenses, and the app will calculate the balance. Built with Ruby on rails and Bootstrap.',
       languages: ['Tailwind', 'HTML', 'Ruby on Rails'],
       live: 'https://budget-app-sami.herokuapp.com/',
@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 5,
       title: 'Game of Life',
-      img: './assets/project-img/game_of_life.png',
-      desc: 'In this project, I built a simple HTML list of To-Do tasks. The app is styled according to the specifications and framework. This simple web page is built using webpack and served by a webpack dev server.',
+      img: './assets/project-img/game_of_life.gif',
+      desc: 'This app is built with HTML | CSS | JAVASCRIPT | WEBPACK and JEST it uses multiple API to render popular movies and enable users to have social interactivity such as like and comments.',
       languages: ['CSS', 'HTML', 'SCSS', 'Webpack', 'JavaScript'],
       live: 'https://duanedave.github.io/Capstone-Kanban',
       source: 'https://github.com/samiullah997/Capstone-Kanban',
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 6,
       title: 'Book Store',
-      img: './assets/project-img/book_store.png',
+      img: './assets/project-img/book_store.jpg',
       desc: 'In this project, I built a Bookstore CMS. The app allows users to add, remove, and filter books by category. This simple web page is built using React and Redux.',
       languages: ['CSS', 'HTML', 'React', 'Redux', 'JavaScript'],
       live: 'https://subtle-brigadeiros-d2870f.netlify.app',
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 7,
       title: 'Super Heroes',
-      img: './assets/project-img/super_hero.png',
+      img: './assets/project-img/super_hero.jpg',
       desc: 'In this project, I created a single-page application using React and Redux. The application fetches data from an API and displays it on the page. The user can filter the data by name and get movie heroes.',
       languages: ['CSS', 'HTML', 'React', 'Redux', 'JavaScript'],
       live: 'https://fascinating-pastelito-bbdd20.netlify.app',
@@ -128,11 +128,20 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 8,
       title: 'Math-Magicians',
-      img: './assets/project-img/calculater.png',
+      img: './assets/project-img/calculater.gif',
       desc: 'In this project, I created a  Math Magicians app. I developed the app using React components that hold the core functionality: a calculator. The primary operations are addition, subtraction, multiplication, and division. I styled the app using Bootstrap.',
       languages: ['CSS', 'HTML', 'React', 'Redux', 'JavaScript'],
       live: 'https://neon-gaufre-c1a782.netlify.app',
       source: 'https://github.com/samiullah997/math-magicians',
+    },
+    {
+      id: 9,
+      title: 'SMS',
+      img: './assets/project-img/sms.jpg',
+      desc: 'The School Management System project in PHP is a comprehensive software solution that streamlines administrative tasks, student records management, and communication between teachers, students, and parents, enhancing overall efficiency and organization within educational institutions. This user-friendly system offers features such as attendance tracking, grade management, timetable creation, and report generation, making it an indispensable tool for effective school management.',
+      languages: ['CSS', 'HTML', 'Bootstrap', 'PHP', 'JavaScript'],
+      live: 'https://shrumstech.000webhostapp.com',
+      source: 'https://github.com/samiullah997/sms.git',
     },
   ];
 
