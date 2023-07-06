@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create a new object
   const mainCardDetails = {
-    title: "Leaderboard",
-    desc: "In this activity I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I have develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript async and await…",
-    languages: ["Html", "Css", "JavaScript", "ReactJS"],
-    live: "https://sami-leader-board.netlify.app/",
-    source: "https://github.com/samiullah997/Leaderboard.git",
-    img: "./assets/project-img/leaderboard.gif",
+    title: "SRH-ERP",
+    desc: "SRH-ERP is a web application that allows users to manage their employees, departments, and projects. Users can add, edit, and delete employees, departments, and projects. Built with Spring Boot.",
+    languages: ["Html", "Css", "JavaScript", "SpringBoot", "Java", "MySQL"],
+    live: 'http://16.16.13.53:8080/SRHERP',
+    source: 'https://github.com/samiullah997/SRH-ERP.git',
+    img: "./assets/project-img/srherp.png",
   };
 
   const {
@@ -142,6 +142,15 @@ document.addEventListener("DOMContentLoaded", () => {
       languages: ['CSS', 'HTML', 'Bootstrap', 'PHP', 'JavaScript'],
       live: 'https://shrumstech.000webhostapp.com',
       source: 'https://github.com/samiullah997/sms.git',
+    },
+    {
+      id: 10,
+      title: 'Leaderboard',
+      img: './assets/project-img/leaderboard.gif',
+      desc: 'In this activity I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I have develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript async and await…',
+      languages: ["Html", "Css", "JavaScript", "ReactJS"],
+      live: "https://sami-leader-board.netlify.app/",
+      source: "https://github.com/samiullah997/Leaderboard.git",
     },
   ];
 
